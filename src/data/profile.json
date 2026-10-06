@@ -1,6 +1,6 @@
 {
   "name": "Kautik Rehani",
-  "role": "Bachelors of Science (Physics Major & Mathematics Minor)",
+  "role": "Bachelor of Science",
   "institution": "IISER Pune",
   "institutionFull": "Indian Institute of Science Education and Research Pune",
   "institutionUrl": "https://www.iiserpune.ac.in/",
@@ -20,5 +20,7 @@
     "Scattering amplitudes",
     "Mathematical physics"
   ],
-  "juniorNote": "If you are a junior student finding your way into physics, you are welcome to get in touch. I’m happy to share what I’ve learned about coursework, books, summer internships, and starting a research project. I’m still learning too, and would be glad to compare notes."
+  "juniorNote": "If you are a junior student finding your way into physics, you are welcome to get in touch. I’m happy to share what I’ve learned about coursework, books, summer internships, and starting a research project. I’m still learning too, and would be glad to compare notes.",
+  "major": "Physics Major",
+  "minor": "Mathematics Minor"
 }

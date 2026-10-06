@@ -37,7 +37,7 @@ const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro
     </div>
     <aside class="sidebar" aria-label="Site sidebar">
       <a class="identity" href={url('/')}><span>{profile.name}</span></a>
-      <p class="sidebar-bio">{profile.role}<br /><Link href={profile.institutionUrl}>{profile.institution}</Link></p>
+      <p class="sidebar-bio">{profile.role}<br />{profile.major}<br />{profile.minor}<br /><Link href={profile.institutionUrl}>{profile.institution}</Link></p>
       <nav class="desktop-nav" aria-label="Main navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}</nav>
     </aside>
     <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}</nav></details></header>
