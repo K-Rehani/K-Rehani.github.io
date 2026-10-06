@@ -57,7 +57,7 @@ All 20 numbered files are part of the work with Prof. Sudarshan Ananth and are n
 
 ## Profile and unfilled details
 
-Name, institution, Physics major, Mathematics minor, the research relationships, GitHub account, and junior-student welcome are supported by the request and supplied context. The site uses the general phrase “undergraduate studies” until the exact preferred degree title and dates are confirmed.
+Name, institution, Physics major, Mathematics minor, the research relationships, GitHub account, and junior-student welcome are supported by the request and supplied context. The degree title “Bachelors of Science (Physics Major & Mathematics Minor)” follows the owner’s requested wording. Education dates remain to be supplied.
 
 The notes repository was located and its README read: https://github.com/K-Rehani/Physics-Mathematics-Lecture-Notes. No notes PDFs were present. There are therefore no guessed per-note download links.
 

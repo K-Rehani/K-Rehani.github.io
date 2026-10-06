@@ -96,7 +96,7 @@ Reports link to their existing GitHub files. Third-party PDFs, book extracts, su
 ## Details still to add
 
 - Your full CV PDF URL and, if desired, a photograph.
-- Exact degree title and education dates, if you want more detail than “undergraduate studies”.
+- Education dates, if you want them shown alongside the degree title.
 - A confirmed list of formal and audited courses, including which are ongoing.
 - Named extracurricular activities and roles you want included.
 - Your own notes PDFs and their exact public URLs. The notes repository currently has a README but no notes PDFs.

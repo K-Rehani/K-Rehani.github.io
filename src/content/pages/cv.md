@@ -1,7 +1,7 @@
 ## Education
 
 **Indian Institute of Science Education and Research Pune**  
-Undergraduate studies · Physics major, Mathematics minor
+Bachelors of Science (Physics Major & Mathematics Minor)
 
 ## Research experience
 

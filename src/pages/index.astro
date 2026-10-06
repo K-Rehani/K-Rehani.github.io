@@ -12,7 +12,7 @@ const projects = (await getCollection('research', ({data}) => !data.draft)).sort
   <p class="eyebrow">Physics · IISER Pune</p>
   {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="125" height="150" />}
   <h1>{profile.name}</h1>
-  <p class="lead">An undergraduate in physics,<br />drawn to fields, gravity, and their mathematics.</p>
+  <p class="lead">{profile.degree}<br />drawn to fields, gravity, and their mathematics.</p>
   <ul class="intro-links"><li><Link href="/cv/">Curriculum vitae</Link></li>{profile.email && <li><Link href={`mailto:${profile.email}`}>Email</Link></li>}<li><Link href={profile.github}>GitHub</Link></li>{profile.linkedin && <li><Link href={profile.linkedin}>LinkedIn</Link></li>}</ul>
   <div class="intro prose"><Bio /></div>
   <ul class="interests" aria-label="Research interests">{profile.interests.map(t => <li>{t}</li>)}</ul>
