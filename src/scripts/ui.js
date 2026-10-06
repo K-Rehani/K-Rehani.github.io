@@ -6,6 +6,7 @@ export function initUI(doc = document, win = window) {
     const dark = root.dataset.theme !== 'light';
     theme?.setAttribute('aria-pressed', String(!dark));
     theme?.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`);
+    theme?.setAttribute('title', `Switch to ${dark ? 'light' : 'dark'} mode`);
     if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
   };
   sync();
