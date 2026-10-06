@@ -108,7 +108,7 @@ Copy `templates/course.md` into `src/content/courses/`. Choose exactly one categ
 - `Audited coursework`
 - `Independent study / reading`
 
-Only groups with published entries appear. `status` can say `Completed`, `In progress`, or describe the scope of selected reading. `summary` is what appears on the Courses page. This page does not publish the Markdown body. Do not put grades into the metadata. The first version includes only reading supported by the supplied files; add the credited/audited list when confirmed.
+The numbered reading material belongs to the Ananth research page. The earlier course summaries are saved as drafts. To add actual coursework later, create a new course file and set `draft: false`; `/courses/` will then automatically show the course list. Until then, that address leads to the Ananth project. `status` can say `Completed` or `In progress`. The Courses page displays `summary`, rather than the Markdown body. Do not put grades into the metadata.
 
 ## 6. Change your biography and education
 
@@ -153,7 +153,7 @@ import Base from '../layouts/Base.astro';
 
 The desktop and mobile menus both update. For a larger repeated section such as Publications, use the research collection as a model: add its schema, content folder, and list/detail pages. Do this when there is actual content to show.
 
-Courses already exists and is linked from the sidebar, CV, Notes, and mobile menu. You can move it into the main navigation by adding it to the navigation array and removing the secondary sidebar link in `Base.astro`.
+Courses is currently absent from the navigation. Once you have added confirmed coursework, you can add `{ "label": "Courses", "href": "/courses/" }` to `src/data/navigation.json`. It will then appear with the other links in both menus. The supplied Ananth reading material is edited in `src/content/research/light-cone-field-theory.md`, rather than under Notes or Courses.
 
 ## 10. Change colours and fonts
 

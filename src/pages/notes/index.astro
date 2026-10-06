@@ -7,8 +7,9 @@ import profile from '../../data/profile.json';
 const notes = (await getCollection('notes', ({data}) => !data.draft)).sort((a,b) => a.data.order - b.data.order);
 const subjects = [...new Set(notes.map(n => n.data.subject))];
 ---
-<Base title="Notes" description="Personal study notes and reading guides in relativity, quantum field theory, light-cone gravity, and scattering amplitudes.">
-  <header class="page-header"><p class="eyebrow">Learning & working things out</p><h1>Notes</h1><p>Reading guides and, as I organize them, my own notes from courses, books, and independent study.</p>{profile.notesRepository && <Link href={profile.notesRepository}>Physics & mathematics notes on GitHub</Link>}</header>
+<Base title="Notes" description="Personal physics and mathematics notes by Kautik Rehani.">
+  <header class="page-header"><p class="eyebrow">Learning & working things out</p><h1>Notes</h1><p>My own notes from lectures, courses, books, and independent study.</p>{profile.notesRepository && <Link href={profile.notesRepository}>Physics & mathematics notes on GitHub</Link>}</header>
   {subjects.map(subject => <section><h2>{subject}</h2>{notes.filter(n => n.data.subject === subject).map(note => <NoteEntry note={note} />)}</section>)}
-  <aside class="quiet-panel"><p>These are personal study notes and reading guides, and may contain errors. Corrections are welcome. References are credited to their authors.</p><Link href="/courses/">Courses & independent reading →</Link></aside>
+  <p>The reading material and references for my work with Prof. Sudarshan Ananth are collected on the <Link href="/research/light-cone-field-theory/">project page</Link>.</p>
+  <aside class="quiet-panel"><p>These are personal study notes and may contain errors. Corrections are welcome.</p></aside>
 </Base>

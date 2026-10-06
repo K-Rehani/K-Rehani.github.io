@@ -6,5 +6,5 @@ import { Content } from '../content/pages/cv.md';
 ---
 <Base title="Curriculum vitae" description="Education, research experience, and technical background of Kautik Rehani.">
   <header class="page-header"><p class="eyebrow">Academic background</p><h1>Curriculum vitae</h1><p>{profile.degree}<br />{profile.institutionFull}</p>{profile.cvUrl ? <Link class="cv-download" href={profile.cvUrl}>Full CV (PDF) →</Link> : <p class="small">Full PDF CV will be added here.</p>}</header>
-  <div class="prose"><Content /></div><ul class="intro-links"><li><Link href="/research/">Project descriptions & reports →</Link></li><li><Link href="/courses/">Courses & reading →</Link></li></ul>
+  <div class="prose"><Content /></div><ul class="intro-links"><li><Link href="/research/">Project descriptions & reports →</Link></li></ul>
 </Base>

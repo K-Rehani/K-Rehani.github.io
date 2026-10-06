@@ -32,8 +32,8 @@ npm run preview
 | Short biography | `src/content/pages/home.md` |
 | CV highlights | `src/content/pages/cv.md` |
 | Research projects | `src/content/research/` — one Markdown file per project |
-| Notes and reading guides | `src/content/notes/` — one Markdown file per entry |
-| Courses | `src/content/courses/` — one Markdown file per course |
+| Personal notes | `src/content/notes/` — one Markdown file per entry |
+| Future coursework | `src/content/courses/` — one Markdown file per course |
 | Sidebar links | `src/data/navigation.json` |
 | Colours, typefaces, spacing | `src/styles/global.css` |
 
@@ -79,15 +79,17 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 
 ## What is included
 
-- Home, Research, Notes, CV, Contact, Courses, and a useful 404 page.
+- Home, Research, Notes, CV, Contact, and a useful 404 page.
 - Three research entries: ongoing IISER study, NCRA 2025, and TIFR 2024.
-- Four subject-based study/reading pages based on the supplied material.
+- All 20 supplied reading items and references collected under the IISER project with Prof. Sudarshan Ananth.
 - Content collections: new Markdown entries appear automatically.
 - Optional external PDF links, repository links, and local files.
 - Mathematics rendered at build time with KaTeX, with local CSS/fonts; syntax-highlighted code blocks.
 - Dark/light themes, mobile navigation, keyboard focus styles, a skip link, and reduced-motion rules.
 - Page descriptions, Open Graph metadata, canonical links, favicon, sitemap, and robots.txt.
 - A lockfile and automated GitHub Pages deployment.
+
+The sidebar contains Home, Research, Notes, CV, and Contact. The `kr.` mark is used only as the browser-tab icon. The Ananth reading material is part of the project page; old reading-page links lead there. The course collection remains available for future confirmed coursework.
 
 Reports link to their existing GitHub files. Third-party PDFs, book extracts, survey data, and the uploaded theses are not bundled.
 

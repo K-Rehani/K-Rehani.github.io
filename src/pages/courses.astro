@@ -3,11 +3,13 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Link from '../components/Link.astro';
 import CourseEntry from '../components/CourseEntry.astro';
+import { url } from '../lib/urls';
 const courses = (await getCollection('courses', ({data}) => !data.draft)).sort((a,b) => a.data.order - b.data.order);
+if (courses.length === 0) return Astro.redirect(url('/research/light-cone-field-theory/'));
 const groups = ['Formal coursework', 'Audited coursework', 'Independent study / reading'];
 ---
-<Base title="Courses & reading" description="Selected independent reading in relativity, quantum field theory, and light-cone gravity.">
-  <header class="page-header"><p class="eyebrow">Academic background</p><h1>Courses & reading</h1><p>A record of selected study. Independent reading is listed separately from credited and audited courses.</p></header>
+<Base title="Courses" description="Coursework and independent study by Kautik Rehani.">
+  <header class="page-header"><p class="eyebrow">Academic background</p><h1>Courses</h1><p>A record of coursework and independent study.</p></header>
   {groups.filter(g => courses.some(c => c.data.category === g)).map(g => <section><h2>{g}</h2>{courses.filter(c => c.data.category === g).map(course => <CourseEntry course={course} />)}</section>)}
-  <p class="small muted">Formal and audited coursework will be added here.</p><p><Link href="/notes/">Related notes & references →</Link></p>
+  <p><Link href="/notes/">Related notes →</Link></p>
 </Base>

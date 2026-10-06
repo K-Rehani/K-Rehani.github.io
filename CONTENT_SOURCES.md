@@ -53,7 +53,7 @@ The user supplied the overall August 2025–present period, supervisor, and orde
 
 Supervisor link: https://inspirehep.net/authors/1019716?ui-citation-summary=true
 
-The first version's Notes section contains new short study guides and reading lists based on these materials. They are not transcriptions of personal handwritten lecture notes. No thesis, paper, or textbook is presented as Kautik's publication or redistributed as a download.
+All 20 numbered files are part of the work with Prof. Sudarshan Ananth and are now listed on that research page, along with their study/reference roles. The earlier separate reading guides and course summaries are saved as drafts. Notes is reserved for personal notes. No thesis, paper, or textbook is presented as Kautik's publication or redistributed as a download.
 
 ## Profile and unfilled details
 
