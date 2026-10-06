@@ -6,12 +6,12 @@ supervisorUrl: "https://inspirehep.net/authors/1019716?ui-citation-summary=true"
 dates: "August 2025–present"
 start: "2025-08-01"
 category: "Semester study & projects"
-topics: ["Light-cone gauge", "Gravity", "Yang–Mills theory", "Supersymmetry"]
-summary: "Ongoing study of field theory in light-cone gauge, from relativistic fields and cubic interactions to the gravity action and supersymmetric Yang–Mills theory."
+topics: ["Light-cone gauge", "Gravity", "Yang–Mills theory", "Supersymmetry", "Color–kinematics duality"]
+summary: "Study of field theory and gravity in light-cone gauge, with current work on color–kinematics (CK) duality."
 ---
 
 
-My current theoretical work with Prof. Sudarshan Ananth is centered on the light-cone formulation of field theory. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity.
+My theoretical work with Prof. Sudarshan Ananth has focused on the light-cone formulation of field theory. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity.
 
 ## What I have been studying
 
@@ -19,9 +19,12 @@ I began with special relativity, index notation, the Lagrangian formulation of e
 
 My gravity reading has focused on the gauge conditions and constraint equations that reduce the Einstein–Hilbert action to its physical degrees of freedom, followed by its expansion in graviton fields. I have been working through the cubic and quartic terms, using the original light-front treatment and later expressions for comparison.
 
-## Current direction
+## Current project
 
-I am now studying the light-cone formulation of $\mathcal{N}=4$ supersymmetric Yang–Mills theory. Related references in my reading include $\mathcal{N}=8$ supergravity, higher-order gravity vertices, quadratic-form Hamiltonians, and the connection between gauge and gravity amplitudes through KLT relations.
+I am currently working on color–kinematics (CK) duality with Prof. Sudarshan Ananth. My current references are the following papers by Bern, Carrasco and Johansson (BCJ):
+
+- [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993).
+- [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
 
 ## Reading and references
 
@@ -56,16 +59,6 @@ The first stage covered special relativity, tensor and index notation, the elect
 
 For gravity, I studied the gauge conditions and constraint equations that leave the two physical graviton helicities in four dimensions, then worked through the cubic and quartic interaction terms. The higher-order gravity papers and theses provide further references for these calculations.
 
-My current reading is the light-cone formulation of $\mathcal{N}=4$ Yang–Mills theory. The $\mathcal{N}=8$ supergravity, KLT, and quadratic-form papers are related references I use to understand the connections between gauge theory and gravity.
-
-## Conventions
-
-In my own calculations I use the mostly-plus spacetime metric,
-
-$$
-\eta_{\mu\nu}=\operatorname{diag}(-1,+1,+1,+1).
-$$
-
-Some references use different conventions, so I check signs and index positions when comparing expressions.
+My reading also includes the light-cone formulation of $\mathcal{N}=4$ Yang–Mills theory. The $\mathcal{N}=8$ supergravity, KLT, and quadratic-form papers are related references I use to understand the connections between gauge theory and gravity.
 
 Further semester projects and my own write-ups will be added here as the work develops.
