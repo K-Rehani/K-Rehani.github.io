@@ -19,16 +19,16 @@ I began with special relativity, index notation, the Lagrangian formulation of e
 
 My gravity reading has focused on the gauge conditions and constraint equations that reduce the Einstein–Hilbert action to its physical degrees of freedom, followed by its expansion in graviton fields. I have been working through the cubic and quartic terms, using the original light-front treatment and later expressions for comparison.
 
-## Current project
+## Currently working on
 
 I am currently working on color–kinematics (CK) duality with Prof. Sudarshan Ananth. My current references are the following papers by Bern, Carrasco and Johansson (BCJ):
 
-- [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993).
-- [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
+- Reference 21: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993).
+- Reference 22: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
 
 ## Reading and references
 
-The following material is part of my work with Prof. Sudarshan Ananth, beginning in August 2025. The numbering follows the files I used for the project. Some items are calculations I have worked through; others are references for the next stages.
+The following material is part of my work with Prof. Sudarshan Ananth, beginning in August 2025. Items 1–20 follow the files I used for the project; items 21–22 are my current CK-duality references. Some items are calculations I have worked through; others are references for the next stages.
 
 | No. | Material | Progress / use |
 | --- | --- | --- |
@@ -52,6 +52,8 @@ The following material is part of my work with Prof. Sudarshan Ananth, beginning
 | 18 | Ananth, Brink, Heise and Svendsen, [*The N=8 Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference |
 | 19 | Ananth and Theisen, [*KLT Relations from the Einstein–Hilbert Lagrangian*](https://arxiv.org/abs/0706.1778) | Reference |
 | 20 | Ananth, Brink, Majumdar, Mali and Shah, [*Gravitation and Quadratic Forms*](https://arxiv.org/abs/1702.06261) | Related reading |
+| 21 | Bern, Carrasco and Johansson, [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) | Current CK-duality reference |
+| 22 | Bern, Carrasco and Johansson, [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) | Current CK-duality reference |
 
 ## How the topics fit together
 

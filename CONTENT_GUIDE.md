@@ -159,7 +159,7 @@ Courses is currently absent from the navigation. Once you have added confirmed c
 
 The first two rules in `src/styles/global.css` define dark/light colours. Change `--bg`, `--side`, `--text`, `--muted`, and `--accent` there. Check that text and links still contrast with the backgrounds.
 
-`--serif` is the heading font and `--sans` the body font. The defaults use fonts already on the reader's device, so there are no remote font requests. Avoid changing layout rules unless you want to redesign the site.
+`--heading-font` is the heading font and `--sans` the body font. Both currently use Helvetica Neue / Arial for a consistent, quiet appearance. The defaults use fonts already on the reader's device, so there are no remote font requests. Avoid changing layout rules unless you want to redesign the site.
 
 ## 11. Publish changes
 
