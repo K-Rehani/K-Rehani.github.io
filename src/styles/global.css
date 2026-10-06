@@ -42,14 +42,15 @@ body {
   line-height:1.75;
   -webkit-font-smoothing:antialiased
 }
-a {
+/* Keep visited links in the same theme color without overriding navigation styles. */
+a,a:where(:visited) {
   color:var(--accent);
   text-decoration-thickness:1px;
   text-underline-offset:.22em
 }
 a:hover {
   text-decoration:underline;
-  color:var(--heading)
+  color:var(--accent)
 }
 button,summary,a {
   -webkit-tap-highlight-color:transparent
