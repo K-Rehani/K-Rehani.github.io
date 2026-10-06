@@ -61,7 +61,9 @@ Name, institution, Physics major, Mathematics minor, the research relationships,
 
 The notes repository was located and its README read: https://github.com/K-Rehani/Physics-Mathematics-Lecture-Notes. No notes PDFs were present. There are therefore no guessed per-note download links.
 
-No formal/audited course list was inferred from the titles of reference papers. Their categories are implemented but remain empty pending a confirmed list. Named extracurricular roles, grades, awards, degree dates, email, LinkedIn, and a CV PDF remain unfilled.
+The official student email and LinkedIn profile were supplied explicitly for publication and are included on the Contact page.
+
+No formal/audited course list was inferred from the titles of reference papers. Their categories are implemented but remain empty pending a confirmed list. Named extracurricular roles, grades, awards, degree dates, and a CV PDF remain unfilled.
 
 ## Design references
 

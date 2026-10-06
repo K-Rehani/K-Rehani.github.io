@@ -93,14 +93,13 @@ Reports link to their existing GitHub files. Third-party PDFs, book extracts, su
 
 ## Details still to add
 
-- A public email address you want shown on the website.
-- Your full CV PDF URL and, if desired, a LinkedIn URL and photograph.
+- Your full CV PDF URL and, if desired, a photograph.
 - Exact degree title and education dates, if you want more detail than “undergraduate studies”.
 - A confirmed list of formal and audited courses, including which are ongoing.
 - Named extracurricular activities and roles you want included.
 - Your own notes PDFs and their exact public URLs. The notes repository currently has a README but no notes PDFs.
 - Individual titles/dates and write-ups for further semester projects, if you want them separated from the ongoing light-cone study.
 
-Missing email, LinkedIn, photo, and CV links are deliberately empty in the profile settings. Their components appear automatically once you fill the corresponding field. No private contact information from PDFs has been copied into the site.
+Your official email and LinkedIn profile are included. The optional photo and CV links are empty in the profile settings; their components appear automatically once filled. No private contact information from PDFs has been copied into the site.
 
 See `CONTENT_SOURCES.md` for the basis of the project descriptions and `VERIFICATION.md` for checks and remaining manual review.
