@@ -1,0 +1,41 @@
+---
+import profile from '../data/profile.json';
+import navigation from '../data/navigation.json';
+import Link from '../components/Link.astro';
+import { url } from '../lib/urls';
+import '../styles/global.css';
+interface Props { title?: string; description?: string; math?: boolean; noindex?: boolean }
+const { title, description = profile.description, math = false, noindex = false } = Astro.props;
+const pageTitle = title ? `${title} · ${profile.name}` : `${profile.name} · Physics`;
+const active = (href: string) => href === '/' ? Astro.url.pathname === url('/') : Astro.url.pathname.startsWith(url(href));
+const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title><meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" /><meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} /><meta property="og:site_name" content={profile.name} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="color-scheme" content="dark light" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <script is:inline>try { document.documentElement.dataset.theme = localStorage.getItem('theme') === 'light' ? 'light' : 'dark'; } catch {}</script>
+    {math && <link rel="stylesheet" href={url('/math/katex.min.css')} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Site sidebar">
+      <a class="identity" href={url('/')}><span class="monogram" aria-hidden="true">kr.</span><span>{profile.name}</span></a>
+      <p class="sidebar-bio">{profile.role}<br />Mathematics minor<br /><Link href={profile.institutionUrl}>{profile.institution}</Link></p>
+      <nav class="desktop-nav" aria-label="Main navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}</nav>
+      <div class="sidebar-bottom"><Link href="/courses/">Courses & reading</Link><button id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false"><span aria-hidden="true">◐</span><span id="theme-label">Light mode</span></button></div>
+    </aside>
+    <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}<a href={url('/courses/')}>Courses & reading</a></nav></details></header>
+    <div class="page"><main id="main" tabindex="-1"><slot /></main><footer><span>{profile.name} · {profile.location}</span><Link href="/contact/">Get in touch</Link></footer></div>
+    <script>import { initUI } from '../scripts/ui.js'; initUI();</script>
+  </body>
+</html>

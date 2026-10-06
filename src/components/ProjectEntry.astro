@@ -1,0 +1,17 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Link from './Link.astro';
+import ResourceLinks from './ResourceLinks.astro';
+interface Props { project: CollectionEntry<'research'>; compact?: boolean }
+const { project, compact = false } = Astro.props;
+const p = project.data;
+---
+<article class:list={['project-entry', { compact }]}>
+  <div class="entry-date">{p.dates}<span>{p.category}</span></div>
+  <div class="entry-body">
+    <h3><Link href={`/research/${project.id}/`}>{p.title}</Link></h3>
+    <p class="entry-meta">{p.institution}{p.supervisor && <> · {p.supervisorUrl ? <Link href={p.supervisorUrl}>{p.supervisor}</Link> : p.supervisor}</>}</p>
+    <p>{p.summary}</p>
+    {!compact && <><p class="topics">{p.topics.join(' · ')}</p><ResourceLinks resources={p.resources} /></>}
+  </div>
+</article>

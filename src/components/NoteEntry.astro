@@ -1,0 +1,7 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Link from './Link.astro';
+interface Props { note: CollectionEntry<'notes'> }
+const { note } = Astro.props;
+---
+<article class="note-entry"><div><h3><Link href={`/notes/${note.id}/`}>{note.data.title}</Link></h3><p>{note.data.summary}</p></div><span class="small-label">{note.data.kind}</span></article>

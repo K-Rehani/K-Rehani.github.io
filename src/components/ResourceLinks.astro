@@ -1,0 +1,6 @@
+---
+import Link from './Link.astro';
+interface Props { resources: { label: string; url: string; kind?: string }[] }
+const { resources } = Astro.props;
+---
+{resources.length > 0 && <ul class="resource-links" aria-label="Resources">{resources.map(r => <li><Link href={r.url}>{r.label}{r.kind === 'pdf' && <span class="file-type"> PDF</span>}</Link></li>)}</ul>}

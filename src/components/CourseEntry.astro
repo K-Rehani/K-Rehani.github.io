@@ -1,0 +1,6 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { course: CollectionEntry<'courses'> }
+const { course } = Astro.props;
+---
+<article class="course-entry"><h3>{course.data.title}</h3><p>{course.data.summary}</p>{course.data.status && <p class="entry-meta">{course.data.status}</p>}</article>

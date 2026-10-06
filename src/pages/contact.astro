@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import Link from '../components/Link.astro';
+import profile from '../data/profile.json';
+---
+<Base title="Contact" description="Find Kautik Rehani online. Junior students are welcome to get in touch about physics, resources, and starting research.">
+  <header class="page-header"><p class="eyebrow">Questions & conversations</p><h1>Contact</h1><p>I am based at IISER Pune. You can find my project code and study material through the links below.</p></header>
+  <ul class="contact-list">{profile.email && <li><span>Email</span><Link href={`mailto:${profile.email}`}>{profile.email}</Link></li>}<li><span>GitHub</span><Link href={profile.github}>K-Rehani</Link></li>{profile.linkedin && <li><span>LinkedIn</span><Link href={profile.linkedin}>{profile.name}</Link></li>}{profile.notesRepository && <li><span>Notes</span><Link href={profile.notesRepository}>Physics & mathematics</Link></li>}</ul>
+  {!profile.email && <p class="small muted">A public email address will be added here.</p>}
+  <section class="quiet-panel"><h2>To junior students</h2><p>{profile.juniorNote}</p><p>My own experience includes scientific Python, astronomical spectra, and moving from introductory courses into theoretical physics. You don’t need a fully formed research question to start a conversation.</p></section>
+</Base>

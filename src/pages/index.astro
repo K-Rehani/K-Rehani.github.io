@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Link from '../components/Link.astro';
+import ProjectEntry from '../components/ProjectEntry.astro';
+import profile from '../data/profile.json';
+import { Content as Bio } from '../content/pages/home.md';
+import { url } from '../lib/urls';
+const projects = (await getCollection('research', ({data}) => !data.draft)).sort((a,b) => +b.data.start - +a.data.start);
+---
+<Base>
+  <p class="eyebrow">Physics · IISER Pune</p>
+  {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="125" height="150" />}
+  <h1>{profile.name}</h1>
+  <p class="lead">An undergraduate in physics,<br />drawn to fields, gravity, and their mathematics.</p>
+  <ul class="intro-links"><li><Link href="/cv/">Curriculum vitae</Link></li>{profile.email && <li><Link href={`mailto:${profile.email}`}>Email</Link></li>}<li><Link href={profile.github}>GitHub</Link></li>{profile.linkedin && <li><Link href={profile.linkedin}>LinkedIn</Link></li>}</ul>
+  <div class="intro prose"><Bio /></div>
+  <ul class="interests" aria-label="Research interests">{profile.interests.map(t => <li>{t}</li>)}</ul>
+  <div class="section-heading"><h2>Research & study</h2><Link href="/research/">All projects →</Link></div>
+  {projects.map(p => <ProjectEntry project={p} compact />)}
+  <section class="quiet-panel"><h2>For students starting out</h2><p>{profile.juniorNote}</p><Link href="/contact/">Get in touch →</Link></section>
+</Base>

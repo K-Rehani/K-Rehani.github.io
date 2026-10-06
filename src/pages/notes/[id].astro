@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Link from '../../components/Link.astro';
+import ResourceLinks from '../../components/ResourceLinks.astro';
+export async function getStaticPaths() { return (await getCollection('notes', ({data}) => !data.draft)).map(note => ({ params: { id: note.id }, props: { note } })); }
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+<Base title={note.data.title} description={note.data.summary} math>
+  <Link class="back-link" href="/notes/">← Notes</Link><header class="page-header"><p class="eyebrow">{note.data.subject} · {note.data.kind}</p><h1>{note.data.title}</h1><p>{note.data.summary}</p><ResourceLinks resources={note.data.resources} /></header>
+  <div class="prose"><Content /></div><aside class="quiet-panel"><p class="small muted">Personal study material; errors are possible and corrections are welcome.</p></aside>
+</Base>
