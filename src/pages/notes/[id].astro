@@ -8,6 +8,6 @@ const { note } = Astro.props;
 const { Content } = await render(note);
 ---
 <Base title={note.data.title} description={note.data.summary} math>
-  <Link class="back-link" href="/notes/">← Notes</Link><header class="page-header"><p class="eyebrow">{note.data.subject} · {note.data.kind}</p><h1>{note.data.title}</h1><p>{note.data.summary}</p><ResourceLinks resources={note.data.resources} /></header>
+  <Link class="back-link" href="/notes/">← Notes / Readings / Books</Link><header class="page-header"><p class="eyebrow">{note.data.subject} · {note.data.kind}</p><h1>{note.data.title}</h1><p>{note.data.summary}</p><ResourceLinks resources={note.data.resources} /></header>
   <div class="prose"><Content /></div><aside class="quiet-panel"><p class="small muted">Personal study material; errors are possible and corrections are welcome.</p></aside>
 </Base>

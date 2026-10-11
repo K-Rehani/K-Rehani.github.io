@@ -79,7 +79,7 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 
 ## What is included
 
-- Home, Research, Notes, CV, Contact, and a useful 404 page.
+- Home, Research, Notes / Readings / Books, CV, Contact, and a useful 404 page.
 - Three research entries: ongoing IISER study, NCRA 2025, and TIFR 2024.
 - All 20 supplied reading items and references collected under the IISER project with Prof. Sudarshan Ananth.
 - Content collections: new Markdown entries appear automatically.
@@ -89,7 +89,7 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 - Page descriptions, Open Graph metadata, canonical links, favicon, sitemap, and robots.txt.
 - A lockfile and automated GitHub Pages deployment.
 
-The sidebar contains Home, Research, Notes, CV, and Contact. The `kr.` mark is used only as the browser-tab icon. The Ananth reading material is part of the project page; old reading-page links lead there. The course collection remains available for future confirmed coursework.
+The sidebar contains Home, Research, Notes / Readings / Books, CV, and Contact. The `kr.` mark is used only as the browser-tab icon. The Ananth reading material is part of the project page; old reading-page links lead there. The course collection remains available for future confirmed coursework.
 
 Reports link to their existing GitHub files. Third-party PDFs, book extracts, survey data, and the uploaded theses are not bundled.
 

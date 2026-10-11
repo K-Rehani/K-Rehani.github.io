@@ -60,7 +60,7 @@ Write in the first person, explain your own work, and separate what you studied 
 
 Copy `templates/note.md` to `src/content/notes/`, rename it, and edit it.
 
-- `subject` groups notes on the Notes page. Reuse the same spelling to keep them together.
+- `subject` groups notes on the Notes / Readings / Books page. Reuse the same spelling to keep them together.
 - `order` sets the display order; smaller numbers appear first.
 - `kind` is `Personal notes`, `Study guide`, or `Reading list`.
 - `draft: true` hides unfinished entries, including their individual URLs and sitemap entries.
@@ -153,7 +153,7 @@ import Base from '../layouts/Base.astro';
 
 The desktop and mobile menus both update. For a larger repeated section such as Publications, use the research collection as a model: add its schema, content folder, and list/detail pages. Do this when there is actual content to show.
 
-Courses is currently absent from the navigation. Once you have added confirmed coursework, you can add `{ "label": "Courses", "href": "/courses/" }` to `src/data/navigation.json`. It will then appear with the other links in both menus. The supplied Ananth reading material is edited in `src/content/research/light-cone-field-theory.md`, rather than under Notes or Courses.
+Courses is currently absent from the navigation. Once you have added confirmed coursework, you can add `{ "label": "Courses", "href": "/courses/" }` to `src/data/navigation.json`. It will then appear with the other links in both menus. The supplied Ananth reading material is edited in `src/content/research/light-cone-field-theory.md`, rather than under Notes / Readings / Books or Courses.
 
 ## 10. Change colours and fonts
 
@@ -203,3 +203,5 @@ GitHub's file History view lets you see earlier versions. A merged pull request 
 - `package-lock.json`: generated dependency lockfile; do not hand-edit.
 
 For routine content updates, the files in `src/content/` and `src/data/` are enough.
+
+The Contact page’s junior welcome begins with `juniorNote` in `src/data/profile.json`. Edit the linked sentences directly in `src/pages/contact.astro`: “a few readings” leads to Notes / Readings / Books, while the course notes and books link uses `notesRepository`.
