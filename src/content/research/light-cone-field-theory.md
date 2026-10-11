@@ -25,37 +25,32 @@ My study also includes $\mathcal{N}=8$ supergravity, with an interest in its sym
 
 I am currently working on color–kinematics (CK) duality with Prof. Sudarshan Ananth. My current references are the following papers by Bern, Carrasco and Johansson (BCJ):
 
-- Reference 21: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993).
-- Reference 22: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
+- Reference 16: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993).
+- Reference 17: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
 
 ## Reading and references
 
-The following material is part of my work with Prof. Sudarshan Ananth, beginning in August 2025. Items 1–20 follow the files I used for the project; items 21–22 are my current CK-duality references. Some items are calculations I have worked through; others are references for the next stages.
+The following material is part of my work with Prof. Sudarshan Ananth, beginning in August 2025. Items 16–17 are my current CK-duality references. Some items are calculations I have worked through; others are references for the next stages.
 
 | No. | Material | Progress / use |
 | --- | --- | --- |
-| 1 | Griffiths, *Introduction to Electrodynamics*, Chapter 12: special relativity and electrodynamics | Studied |
-| 2 | Vectors and index notation | Studied |
-| 3 | Lagrangian formulation of electrodynamics | Studied |
-| 4 | Sarthak Parikh, *Applications of Light-cone Superspace in Quantum Field Theory* (thesis) | Reference |
-| 5 | Mahendraprasad Mali, *Aspects of Gravitation in the Light-cone Gauge* (thesis, 2016) | Reference |
-| 6 | Sucheta Majumdar, *Symmetries in Gravity and Supergravity in the Light-cone Gauge* (thesis, 2018) | Reference |
-| 7 | Srednicki, *Quantum Field Theory*, Chapters 1, 2 and 33 | Studied |
-| 8 | Bengtsson, Bengtsson and Brink, *Cubic Interaction Terms for Arbitrary Spin* | Studied |
-| 9 | Zee, *Quantum Field Theory in a Nutshell*, Sections I.1–I.3: path-integral basics | Studied |
-| 10 | Scherk and Schwarz, *Gravitation in the Light Cone Gauge* | Studied in part |
-| 11 | Goroff and Schwarz, *D-Dimensional Gravity in the Light-cone Gauge* | Reference |
-| 12 | Bengtsson, Cederwall and Lindgren, *Light Front Actions for Gravity and Higher Spins; Some Further Results* | Studied |
-| 13 | Quartic vertex calculations in light cone gauge | Worked through |
-| 14 | Appendix C of Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference for quartic gravity terms |
-| 15 | Ananth, [*The Quintic Interaction Vertex in Light-cone Gravity*](https://arxiv.org/abs/0803.1494) | Reference |
-| 16 | Ananth, Bhave and Raj, [*The Structure of Interaction Vertices in Pure Gravity in the Light-cone Gauge*](https://arxiv.org/abs/2207.10416) | Reference for higher-order gravity terms |
-| 17 | Brink, Lindgren and Nilsson, *N=4 Yang–Mills Theory on the Light Cone* | In progress |
-| 18 | Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference |
-| 19 | Ananth and Theisen, [*KLT Relations from the Einstein–Hilbert Lagrangian*](https://arxiv.org/abs/0706.1778) | Reference |
-| 20 | Ananth, Brink, Majumdar, Mali and Shah, [*Gravitation and Quadratic Forms*](https://arxiv.org/abs/1702.06261) | Related reading |
-| 21 | Bern, Carrasco and Johansson, [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) | Current CK-duality reference |
-| 22 | Bern, Carrasco and Johansson, [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) | Current CK-duality reference |
+| 1 | Sarthak Parikh, *Applications of Light-cone Superspace in Quantum Field Theory* (thesis) | Reference |
+| 2 | Mahendraprasad Mali, *Aspects of Gravitation in the Light-cone Gauge* (thesis, 2016) | Reference |
+| 3 | Sucheta Majumdar, *Symmetries in Gravity and Supergravity in the Light-cone Gauge* (thesis, 2018) | Reference |
+| 4 | Bengtsson, Bengtsson and Brink, *Cubic Interaction Terms for Arbitrary Spin* | Studied |
+| 5 | Scherk and Schwarz, *Gravitation in the Light Cone Gauge* | Studied in part |
+| 6 | Goroff and Schwarz, *D-Dimensional Gravity in the Light-cone Gauge* | Reference |
+| 7 | Bengtsson, Cederwall and Lindgren, *Light Front Actions for Gravity and Higher Spins; Some Further Results* | Studied |
+| 8 | Quartic vertex calculations in light cone gauge | Worked through |
+| 9 | Appendix C of Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference for quartic gravity terms |
+| 10 | Ananth, [*The Quintic Interaction Vertex in Light-cone Gravity*](https://arxiv.org/abs/0803.1494) | Reference |
+| 11 | Ananth, Bhave and Raj, [*The Structure of Interaction Vertices in Pure Gravity in the Light-cone Gauge*](https://arxiv.org/abs/2207.10416) | Reference for higher-order gravity terms |
+| 12 | Brink, Lindgren and Nilsson, *N=4 Yang–Mills Theory on the Light Cone* | In progress |
+| 13 | Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference |
+| 14 | Ananth and Theisen, [*KLT Relations from the Einstein–Hilbert Lagrangian*](https://arxiv.org/abs/0706.1778) | Reference |
+| 15 | Ananth, Brink, Majumdar, Mali and Shah, [*Gravitation and Quadratic Forms*](https://arxiv.org/abs/1702.06261) | Related reading |
+| 16 | Bern, Carrasco and Johansson, [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) | Current CK-duality reference |
+| 17 | Bern, Carrasco and Johansson, [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) | Current CK-duality reference |
 
 ## How the topics fit together
 

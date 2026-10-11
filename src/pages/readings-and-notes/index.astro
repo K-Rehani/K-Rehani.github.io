@@ -9,8 +9,21 @@ const subjects = [...new Set(notes.map(n => n.data.subject))];
 ---
 <Base title="Readings & Notes" description="Physics and mathematics notes, readings, and books shared by Kautik Rehani.">
   <header class="page-header"><h1>Readings & Notes</h1></header>
-  {profile.notesRepository && <p><Link href={profile.notesRepository}>Physics & mathematics notes on GitHub</Link></p>}
-  {subjects.map(subject => <section><h2>{subject}</h2>{notes.filter(n => n.data.subject === subject).map(note => <NoteEntry note={note} />)}</section>)}
-  <p>The reading material and references for my work with Prof. Sudarshan Ananth are collected on the <Link href="/research/light-cone-field-theory/">project page</Link>.</p>
+  <section>
+    <h2>Readings</h2>
+    <ol>
+      <li>Griffiths, <em>Introduction to Electrodynamics</em>, Chapter 12: special relativity and electrodynamics</li>
+      <li>Vectors and index notation</li>
+      <li>Lagrangian formulation of electrodynamics</li>
+      <li>Srednicki, <em>Quantum Field Theory</em>, Chapters 1, 2 and 33</li>
+      <li>Zee, <em>Quantum Field Theory in a Nutshell</em>, Sections I.1–I.3: path-integral basics</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Notes</h2>
+    {profile.notesRepository && <p><Link href={profile.notesRepository}>Physics & mathematics notes on GitHub</Link></p>}
+    {subjects.map(subject => <section><h2>{subject}</h2>{notes.filter(n => n.data.subject === subject).map(note => <NoteEntry note={note} />)}</section>)}
+  </section>
+  <p>Further reading material and references for my work with Prof. Sudarshan Ananth are collected on the <Link href="/research/light-cone-field-theory/">project page</Link>.</p>
   <aside class="quiet-panel"><p>My personal study notes may contain errors. Corrections are welcome.</p></aside>
 </Base>
