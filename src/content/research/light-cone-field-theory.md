@@ -5,7 +5,7 @@ supervisor: "Prof. Sudarshan Ananth"
 supervisorUrl: "https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4"
 dates: "August 2025–present"
 start: "2025-08-01"
-category: "Semester study & projects"
+category: "Long-term project"
 topics: ["Light-cone gauge", "Gravity", "Yang–Mills theory", "Supersymmetry", "Color–kinematics duality"]
 summary: "Study of field theory and gravity in light-cone gauge, with current work on color–kinematics (CK) duality."
 ---
