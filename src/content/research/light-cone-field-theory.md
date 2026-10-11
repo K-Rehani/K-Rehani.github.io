@@ -7,7 +7,7 @@ dates: "August 2025–present"
 start: "2025-08-01"
 category: "Long-term project"
 topics: ["Light-cone gauge", "Gravity", "Yang–Mills theory", "Supersymmetry", "Color–kinematics duality"]
-summary: "Study of gauge theory, gravity, and N=8 supergravity in light-cone gauge, with current work on color–kinematics (CK) duality."
+summary: "Study of gauge theory, gravity, and 𝒩=8 supergravity in light-cone gauge, with current work on color–kinematics (CK) duality."
 ---
 
 
@@ -47,11 +47,11 @@ The following material is part of my work with Prof. Sudarshan Ananth, beginning
 | 11 | Goroff and Schwarz, *D-Dimensional Gravity in the Light-cone Gauge* | Reference |
 | 12 | Bengtsson, Cederwall and Lindgren, *Light Front Actions for Gravity and Higher Spins; Some Further Results* | Studied |
 | 13 | Quartic-contribution working sheet, labelled NB | Worked through |
-| 14 | Appendix C of Ananth, Brink, Heise and Svendsen, [*The N=8 Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference for quartic gravity terms |
+| 14 | Appendix C of Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference for quartic gravity terms |
 | 15 | Ananth, [*The Quintic Interaction Vertex in Light-cone Gravity*](https://arxiv.org/abs/0803.1494) | Reference |
 | 16 | Ananth, Bhave and Raj, [*The Structure of Interaction Vertices in Pure Gravity in the Light-cone Gauge*](https://arxiv.org/abs/2207.10416) | Reference for higher-order gravity terms |
 | 17 | Brink, Lindgren and Nilsson, *N=4 Yang–Mills Theory on the Light Cone* | In progress |
-| 18 | Ananth, Brink, Heise and Svendsen, [*The N=8 Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference |
+| 18 | Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference |
 | 19 | Ananth and Theisen, [*KLT Relations from the Einstein–Hilbert Lagrangian*](https://arxiv.org/abs/0706.1778) | Reference |
 | 20 | Ananth, Brink, Majumdar, Mali and Shah, [*Gravitation and Quadratic Forms*](https://arxiv.org/abs/1702.06261) | Related reading |
 | 21 | Bern, Carrasco and Johansson, [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) | Current CK-duality reference |

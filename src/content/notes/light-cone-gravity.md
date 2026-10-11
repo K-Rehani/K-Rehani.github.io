@@ -15,7 +15,7 @@ My gravity reading follows the reduction of the Einstein–Hilbert action to the
 - J. Scherk and J. H. Schwarz, *Gravitation in the Light Cone Gauge* — studied in part.
 - I. Bengtsson, M. Cederwall and O. Lindgren, *Light Front Actions for Gravity and Higher Spins; Some Further Results*.
 - The quartic-contribution working sheet supplied during the project.
-- Appendix C of Ananth, Brink, Heise and Svendsen, [*The N=8 Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019), as a reference for the pure-gravity action.
+- Appendix C of Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019), as a reference for the pure-gravity action.
 
 ## Further references
 
