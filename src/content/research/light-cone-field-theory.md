@@ -2,7 +2,7 @@
 title: "Field theory and gravity in light-cone gauge"
 institution: "IISER Pune"
 supervisor: "Prof. Sudarshan Ananth"
-supervisorUrl: "https://sites.iiserpune.ac.in/%7Eananth/"
+supervisorUrl: "https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4"
 dates: "August 2025–present"
 start: "2025-08-01"
 category: "Semester study & projects"
