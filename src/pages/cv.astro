@@ -6,12 +6,12 @@ import { url } from '../lib/urls';
 <Base title="Curriculum vitae" description="View or download Kautik Rehani’s academic CV.">
   <header class="page-header cv-header">
     <h1>Curriculum vitae</h1>
-    <div class="cv-actions">
+  </header>
+  <section class="quiet-panel cv-actions" aria-label="CV PDF links">
       <a href={url(profile.cvUrl)} target="_blank" rel="noopener">Open PDF ↗</a>
       <a href={url(profile.cvUrl)} download="Kautik-Rehani-CV.pdf">Download PDF ↓</a>
       <span class="small muted">PDF · 1 page</span>
-    </div>
-  </header>
+  </section>
   <figure class="cv-preview">
     <a href={url(profile.cvUrl)} target="_blank" rel="noopener" aria-label="Open Kautik Rehani’s CV as a PDF">
       <img src={url(profile.cvPreview)} width="1323" height="1871" alt="Preview of Kautik Rehani’s one-page curriculum vitae: education, research experience, coursework, skills, achievements, and activities." decoding="async" />

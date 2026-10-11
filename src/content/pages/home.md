@@ -4,4 +4,4 @@ For a broader audience, I am interested in theoretical high energy physics, with
 
 For a detailed overview of my interests and work please see the [research section](research/).
 
-Outside my own field of research, some topics that fascinate me are Number Theory (especially Prime Numbers), Cryptography, Game Theory, Gene Editing, Soft Robotics (like Baymax!)
+Outside my own field of research, some topics that fascinate me are Number Theory (especially Prime Numbers), Cryptography, Game Theory, Gene Editing, and Soft Robotics (like Baymax!)

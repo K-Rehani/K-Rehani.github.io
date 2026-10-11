@@ -4,7 +4,7 @@ import profile from '../data/profile.json';
 import { Content as Bio } from '../content/pages/home.md';
 import { url } from '../lib/urls';
 ---
-<Base showFooter={false}>
+<Base>
   <h1 class="sr-only">{profile.name}</h1>
   <section class="home-introduction" aria-label="Introduction">
     {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="240" height="300" />}

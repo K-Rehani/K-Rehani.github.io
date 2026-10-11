@@ -715,7 +715,7 @@ footer a {
 
 /* The PDF stays unchanged; the linked page preview works on every screen. */
 .cv-header { padding-bottom:1.1rem; margin-bottom:1.6rem }
-.cv-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.7rem 1.4rem; font-size:.82rem }
+.cv-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.7rem 1.4rem; font-size:.82rem; min-height:44px; margin:0 0 1.6rem }
 .cv-actions .muted { margin-left:auto }
 .cv-preview { margin:0; max-width:770px }
 .cv-preview>a { display:block; background:white; border:1px solid var(--line); border-radius:3px; overflow:hidden; box-shadow:0 8px 30px #00000018 }
