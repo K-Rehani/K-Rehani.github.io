@@ -1,5 +1,3 @@
-I am pursuing a Bachelors of Science (Physics Major & Mathematics Minor) at IISER Pune. My interests are in theoretical physics, especially quantum field theory, gravity, and scattering amplitudes.
+Hi, you have reached the website of Kautik Rehani. I am currently pursuing a Bachelor of Science (Physics Major and Mathematics Minor) at the Indian Institute of Science Education and Research (IISER), Pune.
 
-I am currently studying field theory and gravity in light-cone gauge with [Prof. Sudarshan Ananth](https://inspirehep.net/authors/1019716?ui-citation-summary=true). I enjoy working through the calculations behind these subjects and learning the mathematics that connects them.
-
-My earlier summer projects at TIFR Mumbai and NCRA–TIFR involved astronomical spectra: stacking galaxy and quasar spectra, and comparing repeated observations of active galactic nuclei.
+For a broader audience, I am interested in theoretical high energy physics, with the goal of unifying gravity with the other forces within the quantum field theory framework. I also keep a keen eye on mathematics that could be useful for this work.

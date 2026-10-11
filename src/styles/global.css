@@ -448,10 +448,18 @@ main {
 .contact-list span {
   color:var(--muted)
 }
+.home-introduction {
+  max-width:665px
+}
+.home-introduction .intro p {
+  font-size:1rem;
+  margin:0 0 1.5rem
+}
 .portrait {
-  width:125px;
-  float:right;
-  margin:0 0 1.5rem 2rem;
+  display:block;
+  width:240px;
+  height:auto;
+  margin:0 0 2rem;
   border-radius:3px
 }
 .muted {
@@ -660,9 +668,8 @@ footer a {
     overflow-wrap:anywhere
   }
   .portrait {
-    float:none;
-    width:110px;
-    margin:0 0 1.5rem
+    width:200px;
+    margin:0 0 1.75rem
   }
   .intro-links {
     gap:.6rem 1.1rem

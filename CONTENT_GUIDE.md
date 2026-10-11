@@ -52,7 +52,7 @@ draft: false
 
 `start` is the sortable date; `dates` is the text visitors see. Newer projects appear first. Omit the supervisor fields if not applicable. Use `resources: []` if there are no public files. Only real resources should be listed.
 
-The file automatically appears on Home and Research, and gets its own page. A file named `masters-thesis.md` becomes `/research/masters-thesis/`.
+The file automatically appears on Research and gets its own page. The homepage contains only the personal introduction and optional photo. A file named `masters-thesis.md` becomes `/research/masters-thesis/`.
 
 Write in the first person, explain your own work, and separate what you studied from what you produced. A paper in your bibliography is not your publication.
 
