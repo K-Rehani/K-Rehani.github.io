@@ -52,6 +52,16 @@ a:hover {
   text-decoration:underline;
   color:var(--accent)
 }
+/* External links keep the same color before and after a visit. */
+a[data-external],a[data-external]:visited,
+a[href^="https://"],a[href^="https://"]:visited,
+a[href^="http://"],a[href^="http://"]:visited {
+  color:var(--accent)
+}
+a[data-external] .external-mark {
+  color:inherit
+}
+
 button,summary,a {
   -webkit-tap-highlight-color:transparent
 }
@@ -274,9 +284,6 @@ main {
 }
 .entry-meta,.entry-body .entry-meta {
   font-size:.75rem;
-  color:var(--muted)
-}
-.entry-meta a {
   color:var(--muted)
 }
 .entry-body .topics {
