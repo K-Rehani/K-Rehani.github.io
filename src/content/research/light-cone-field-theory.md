@@ -46,7 +46,7 @@ The following material is part of my work with Prof. Sudarshan Ananth, beginning
 | 10 | Scherk and Schwarz, *Gravitation in the Light Cone Gauge* | Studied in part |
 | 11 | Goroff and Schwarz, *D-Dimensional Gravity in the Light-cone Gauge* | Reference |
 | 12 | Bengtsson, Cederwall and Lindgren, *Light Front Actions for Gravity and Higher Spins; Some Further Results* | Studied |
-| 13 | Quartic-contribution working sheet, labelled NB | Worked through |
+| 13 | Quartic vertex calculations in light cone gauge | Worked through |
 | 14 | Appendix C of Ananth, Brink, Heise and Svendsen, [*The $\mathcal{N}=8$ Supergravity Hamiltonian as a Quadratic Form*](https://arxiv.org/abs/hep-th/0607019) | Reference for quartic gravity terms |
 | 15 | Ananth, [*The Quintic Interaction Vertex in Light-cone Gravity*](https://arxiv.org/abs/0803.1494) | Reference |
 | 16 | Ananth, Bhave and Raj, [*The Structure of Interaction Vertices in Pure Gravity in the Light-cone Gauge*](https://arxiv.org/abs/2207.10416) | Reference for higher-order gravity terms |
