@@ -97,9 +97,6 @@ p {
 h3 a {
   text-decoration:none
 }
-.project-entry h3 a {
-  text-decoration:underline
-}
 ul,ol {
   padding-left:1.25rem
 }
