@@ -1,5 +1,5 @@
 ---
-title: "Field theory and gravity in light-cone gauge"
+title: "QFT and gravity in light-cone gauge"
 institution: "IISER Pune"
 supervisor: "Prof. Sudarshan Ananth"
 supervisorUrl: "https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4"
