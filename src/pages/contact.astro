@@ -4,12 +4,15 @@ import Link from '../components/Link.astro';
 import profile from '../data/profile.json';
 ---
 <Base title="Contact" description="Find Kautik Rehani online. Junior students are welcome to get in touch about physics, resources, and starting research.">
-  <header class="page-header"><p class="eyebrow">Questions & conversations</p><h1>Contact</h1><p>I am based at IISER Pune. You can find my project code and study material through the links below.</p></header>
+  <header class="page-header"><h1>Contact</h1></header>
   <ul class="contact-list">{profile.email && <li><span>Email</span><Link href={`mailto:${profile.email}`}>{profile.email}</Link></li>}<li><span>GitHub</span><Link href={profile.github}>K-Rehani</Link></li>{profile.linkedin && <li><span>LinkedIn</span><Link href={profile.linkedin}>{profile.name}</Link></li>}</ul>
   {!profile.email && <p class="small muted">A public email address will be added here.</p>}
-  <p>If you wish to know more about my current work, please contact me preferably via <Link href={`mailto:${profile.email}`}>email</Link>.</p>
+  <section class="quiet-panel">
+    <h2>For Collaboration</h2>
+    <p>If you wish to know more about my current work, please contact me preferably via email.</p>
+  </section>
   <section class="quiet-panel">
     <h2>To junior students</h2>
-    <p>{profile.juniorNote} If you want to understand my work, I would first recommend <Link href="/readings-and-notes/">a few readings</Link> after which we can have a more fruitful discussion.{profile.notesRepository && <> I have also put the link to my <Link href={profile.notesRepository}>notes and books for several courses</Link> that helped me.</>}</p>
+    <p>{profile.juniorNote} If you want to understand my work, I would first recommend <Link href="/readings-and-notes/">a few readings</Link> after which we can have a more fruitful discussion.{profile.notesRepository && <> I have also put the link to my <Link href={profile.notesRepository}>notes</Link> for several courses along with recommended books that helped me.</>}</p>
   </section>
 </Base>
