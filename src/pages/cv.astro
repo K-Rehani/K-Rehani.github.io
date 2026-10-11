@@ -1,10 +1,21 @@
 ---
 import Base from '../layouts/Base.astro';
-import Link from '../components/Link.astro';
 import profile from '../data/profile.json';
-import { Content } from '../content/pages/cv.md';
+import { url } from '../lib/urls';
 ---
-<Base title="Curriculum vitae" description="Education, research experience, and technical background of Kautik Rehani.">
-  <header class="page-header"><p class="eyebrow">Academic background</p><h1>Curriculum vitae</h1><p>{profile.degree}<br />{profile.institutionFull}</p>{profile.cvUrl ? <Link class="cv-download" href={profile.cvUrl}>Full CV (PDF) →</Link> : <p class="small">Full PDF CV will be added here.</p>}</header>
-  <div class="prose"><Content /></div><ul class="intro-links"><li><Link href="/research/">Project descriptions & reports →</Link></li></ul>
+<Base title="Curriculum vitae" description="View or download Kautik Rehani’s academic CV.">
+  <header class="page-header cv-header">
+    <h1>Curriculum vitae</h1>
+    <div class="cv-actions">
+      <a href={url(profile.cvUrl)} target="_blank" rel="noopener">Open PDF ↗</a>
+      <a href={url(profile.cvUrl)} download="Kautik-Rehani-CV.pdf">Download PDF ↓</a>
+      <span class="small muted">PDF · 1 page</span>
+    </div>
+  </header>
+  <figure class="cv-preview">
+    <a href={url(profile.cvUrl)} target="_blank" rel="noopener" aria-label="Open Kautik Rehani’s CV as a PDF">
+      <img src={url(profile.cvPreview)} width="1323" height="1871" alt="Preview of Kautik Rehani’s one-page curriculum vitae: education, research experience, coursework, skills, achievements, and activities." decoding="async" />
+    </a>
+    <figcaption>Click the page to open the PDF at full size.</figcaption>
+  </figure>
 </Base>

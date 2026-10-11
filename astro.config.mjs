@@ -14,8 +14,11 @@ export default defineConfig({
   base,
   output: 'static',
   trailingSlash: 'always',
-  redirects: Object.fromEntries(movedReadingPages.map(id => [`/notes/${id}/`, `${base.replace(/\/$/, '')}/research/light-cone-field-theory/`])),
-  integrations: [sitemap({ filter: (page) => !/\/404(?:\/|\.html)$/.test(page) && !page.endsWith('/courses/') && !movedReadingPages.some(id => page.endsWith(`/notes/${id}/`)) })],
+  redirects: {
+    '/notes/': `${base.replace(/\/$/, '')}/readings-and-notes/`,
+    ...Object.fromEntries(movedReadingPages.map(id => [`/notes/${id}/`, `${base.replace(/\/$/, '')}/research/light-cone-field-theory/`])),
+  },
+  integrations: [sitemap({ filter: (page) => !/\/404(?:\/|\.html)$/.test(page) && !page.endsWith('/courses/') && !page.endsWith('/notes/') && !movedReadingPages.some(id => page.endsWith(`/notes/${id}/`)) })],
   markdown: {
     processor: unified({
       remarkPlugins: [remarkMath],

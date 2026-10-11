@@ -51,9 +51,10 @@ for (const file of html) {
   }
   for (const img of body.matchAll(/<img\b[^>]*>/g)) assert(/\balt="/.test(img[0]), `${file}: image without alt`);
 }
-for (const page of ['index.html', 'research/index.html', 'notes/index.html', 'courses/index.html', 'cv/index.html', 'contact/index.html', '404.html']) assert(html.includes(page), `Missing ${page}`);
+for (const page of ['index.html', 'research/index.html', 'readings-and-notes/index.html', 'notes/index.html', 'courses/index.html', 'cv/index.html', 'contact/index.html', '404.html']) assert(html.includes(page), `Missing ${page}`);
 assert.match(await readFile(path.join(root, 'robots.txt'), 'utf8'), /Sitemap: https:/);
 assert(await stat(path.join(root, 'sitemap-index.xml')));
-assert(!(await readdir(root, { recursive: true })).some(f => f.endsWith('.pdf')), 'No uploaded PDFs should be redistributed');
+assert.deepEqual(files.filter(f => f.endsWith('.pdf')).sort(), ['cv/Kautik-Rehani-CV.pdf'], 'Only the owner’s explicitly supplied CV may be hosted as a PDF');
+assert.match((await readFile(path.join(root, 'cv/Kautik-Rehani-CV.pdf'))).subarray(0, 5).toString(), /^%PDF-/, 'CV must be a valid PDF file');
 console.log(`Checked ${html.length} pages and ${checked} internal links/assets; ${external.size} distinct external URLs. Base path: ${base || '/'}`);
 console.log('External URL syntax and local targets checked. Network availability is not asserted.');

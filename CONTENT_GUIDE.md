@@ -60,7 +60,7 @@ Write in the first person, explain your own work, and separate what you studied 
 
 Copy `templates/note.md` to `src/content/notes/`, rename it, and edit it.
 
-- `subject` groups notes on the Notes / Readings / Books page. Reuse the same spelling to keep them together.
+- `subject` groups notes on the Readings & Notes page. Reuse the same spelling to keep them together.
 - `order` sets the display order; smaller numbers appear first.
 - `kind` is `Personal notes`, `Study guide`, or `Reading list`.
 - `draft: true` hides unfinished entries, including their individual URLs and sitemap entries.
@@ -98,7 +98,7 @@ $$
 
 Use fenced code blocks with a language name for highlighted code, for example three backticks followed by `python`. Mathematics is rendered during the build; there is no browser-side math engine or external CDN.
 
-To link between native content pages while supporting project subpaths, use relative links. From `/research/project-name/` to `/notes/note-name/`, write `../../notes/note-name/`. For downloadable files, prefer the `resources` field so paths are handled for you.
+To link between native content pages while supporting project subpaths, use relative links. From `/research/project-name/` to `/readings-and-notes/note-name/`, write `../../readings-and-notes/note-name/`. For downloadable files, prefer the `resources` field so paths are handled for you.
 
 ## 5. Add a course
 
@@ -129,7 +129,7 @@ Leave `photo` empty to show no picture. Only use an image you are comfortable pu
 
 ## 8. Change your CV and contact links
 
-In `profile.json`, fill `cvUrl` with the public link to your CV PDF. This automatically shows a prominent Full CV link on the CV page. A local file also works: put it in `public/cv.pdf` and set `cvUrl` to `/cv.pdf`.
+The CV page displays your supplied PDF through a linked one-page preview, with Open PDF and Download PDF links. To update it, replace `public/cv/Kautik-Rehani-CV.pdf` and render the first page with `pdftoppm -r 160 -png -singlefile public/cv/Kautik-Rehani-CV.pdf public/cv/Kautik-Rehani-CV`. The paths are configured as `cvUrl` and `cvPreview` in `profile.json`. The former inbuilt CV content remains in `src/content/pages/cv.md` so it can be restored.
 
 Fill `email` with only the email address; the site creates the `mailto:` link. Fill `linkedin` with your profile URL. Keep any unwanted field empty. Do not copy phone numbers or home addresses into the site.
 
@@ -153,7 +153,7 @@ import Base from '../layouts/Base.astro';
 
 The desktop and mobile menus both update. For a larger repeated section such as Publications, use the research collection as a model: add its schema, content folder, and list/detail pages. Do this when there is actual content to show.
 
-Courses is currently absent from the navigation. Once you have added confirmed coursework, you can add `{ "label": "Courses", "href": "/courses/" }` to `src/data/navigation.json`. It will then appear with the other links in both menus. The supplied Ananth reading material is edited in `src/content/research/light-cone-field-theory.md`, rather than under Notes / Readings / Books or Courses.
+Courses is currently absent from the navigation. Once you have added confirmed coursework, you can add `{ "label": "Courses", "href": "/courses/" }` to `src/data/navigation.json`. It will then appear with the other links in both menus. The supplied Ananth reading material is edited in `src/content/research/light-cone-field-theory.md`, rather than under Readings & Notes or Courses.
 
 ## 10. Change colours and fonts
 
@@ -204,4 +204,4 @@ GitHub's file History view lets you see earlier versions. A merged pull request 
 
 For routine content updates, the files in `src/content/` and `src/data/` are enough.
 
-The Contact page’s junior welcome begins with `juniorNote` in `src/data/profile.json`. Edit the linked sentences directly in `src/pages/contact.astro`: “a few readings” leads to Notes / Readings / Books, while the course notes and books link uses `notesRepository`.
+The Contact page’s junior welcome begins with `juniorNote` in `src/data/profile.json`. Edit the linked sentences directly in `src/pages/contact.astro`: “a few readings” leads to Readings & Notes, while the course notes and books link uses `notesRepository`.

@@ -11,5 +11,5 @@ const groups = ['Formal coursework', 'Audited coursework', 'Independent study / 
 <Base title="Courses" description="Coursework and independent study by Kautik Rehani.">
   <header class="page-header"><p class="eyebrow">Academic background</p><h1>Courses</h1><p>A record of coursework and independent study.</p></header>
   {groups.filter(g => courses.some(c => c.data.category === g)).map(g => <section><h2>{g}</h2>{courses.filter(c => c.data.category === g).map(course => <CourseEntry course={course} />)}</section>)}
-  <p><Link href="/notes/">Related notes →</Link></p>
+  <p><Link href="/readings-and-notes/">Related notes →</Link></p>
 </Base>

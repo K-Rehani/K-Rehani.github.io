@@ -30,7 +30,7 @@ npm run preview
 | --- | --- |
 | Name, email, GitHub, LinkedIn, photo, CV link | `src/data/profile.json` |
 | Short biography | `src/content/pages/home.md` |
-| CV highlights | `src/content/pages/cv.md` |
+| CV PDF and page preview | `public/cv/` — former native content is retained in `src/content/pages/cv.md` |
 | Research projects | `src/content/research/` — one Markdown file per project |
 | Personal notes | `src/content/notes/` — one Markdown file per entry |
 | Future coursework | `src/content/courses/` — one Markdown file per course |
@@ -79,7 +79,7 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 
 ## What is included
 
-- Home, Research, Notes / Readings / Books, CV, Contact, and a useful 404 page.
+- Home, Research, Readings & Notes, CV, Contact, and a useful 404 page.
 - Three research entries: ongoing IISER study, NCRA 2025, and TIFR 2024.
 - All 20 supplied reading items and references collected under the IISER project with Prof. Sudarshan Ananth.
 - Content collections: new Markdown entries appear automatically.
@@ -89,19 +89,21 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 - Page descriptions, Open Graph metadata, canonical links, favicon, sitemap, and robots.txt.
 - A lockfile and automated GitHub Pages deployment.
 
-The sidebar contains Home, Research, Notes / Readings / Books, CV, and Contact. The `kr.` mark is used only as the browser-tab icon. The Ananth reading material is part of the project page; old reading-page links lead there. The course collection remains available for future confirmed coursework.
+The sidebar contains Home, Research, Readings & Notes, CV, and Contact. The `kr.` mark is used only as the browser-tab icon. The Ananth reading material is part of the project page; old reading-page links lead there. The course collection remains available for future confirmed coursework.
 
 Reports link to their existing GitHub files. Third-party PDFs, book extracts, survey data, and the uploaded theses are not bundled.
 
 ## Details still to add
 
-- Your full CV PDF URL and, if desired, a photograph.
+- A formal portrait, if desired; the supplied CV PDF is now included.
 - Education dates, if you want them shown alongside the degree title.
 - A confirmed list of formal and audited courses, including which are ongoing.
 - Named extracurricular activities and roles you want included.
 - Your own notes PDFs and their exact public URLs. The notes repository currently has a README but no notes PDFs.
 - Individual titles/dates and write-ups for further semester projects, if you want them separated from the ongoing light-cone study.
 
-Your official email and LinkedIn profile are included. The optional photo and CV links are empty in the profile settings; their components appear automatically once filled. No private contact information from PDFs has been copied into the site.
+Your official email and LinkedIn profile are included. The supplied CV PDF is hosted unchanged, with a linked page preview. The optional photo setting remains empty.
 
 See `CONTENT_SOURCES.md` for the basis of the project descriptions and `VERIFICATION.md` for checks and remaining manual review.
+
+The Readings & Notes section uses `/readings-and-notes/`; old `/notes/` links redirect there. The CV page provides a responsive preview and open/download links to the supplied, unmodified PDF. Its former native content is retained in `src/content/pages/cv.md` for an easy return.

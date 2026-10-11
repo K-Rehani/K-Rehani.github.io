@@ -705,3 +705,13 @@ footer a {
     break-inside:avoid
   }
 }
+
+/* The PDF stays unchanged; the linked page preview works on every screen. */
+.cv-header { padding-bottom:1.1rem; margin-bottom:1.6rem }
+.cv-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.7rem 1.4rem; font-size:.82rem }
+.cv-actions .muted { margin-left:auto }
+.cv-preview { margin:0; max-width:770px }
+.cv-preview>a { display:block; background:white; border:1px solid var(--line); border-radius:3px; overflow:hidden; box-shadow:0 8px 30px #00000018 }
+.cv-preview img { display:block; width:100%; height:auto }
+.cv-preview figcaption { margin-top:.7rem; font-size:.75rem; color:var(--muted) }
+@media(max-width:480px) { .cv-actions .muted { flex-basis:100%; margin-left:0 } }

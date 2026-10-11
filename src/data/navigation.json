@@ -1,7 +1,22 @@
 [
-  { "label": "Home", "href": "/" },
-  { "label": "Research", "href": "/research/" },
-  { "label": "Notes / Readings / Books", "href": "/notes/" },
-  { "label": "CV", "href": "/cv/" },
-  { "label": "Contact", "href": "/contact/" }
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "Research",
+    "href": "/research/"
+  },
+  {
+    "label": "Readings & Notes",
+    "href": "/readings-and-notes/"
+  },
+  {
+    "label": "CV",
+    "href": "/cv/"
+  },
+  {
+    "label": "Contact",
+    "href": "/contact/"
+  }
 ]
