@@ -62,6 +62,17 @@ a[data-external] .external-mark {
   color:inherit
 }
 
+/* Keep a continuous underline when a link contains rendered math. */
+a:has(.katex),a:has(.katex):hover {
+  text-decoration:none;
+  background-image:linear-gradient(currentColor,currentColor);
+  background-size:100% 1px;
+  background-repeat:no-repeat;
+  background-position:left calc(100% - .02em);
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone
+}
+
 button,summary,a {
   -webkit-tap-highlight-color:transparent
 }
