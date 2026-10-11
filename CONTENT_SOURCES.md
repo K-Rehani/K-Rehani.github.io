@@ -51,7 +51,7 @@ The user supplied the overall August 2025–present period, supervisor, and orde
 | 19 | KLT relations from the Einstein–Hilbert Lagrangian | Reference |
 | 20 | Gravitation and quadratic forms | Related reading; completion status not inferred |
 
-Supervisor link: https://inspirehep.net/authors/1019716?ui-citation-summary=true
+Supervisor link: https://sites.iiserpune.ac.in/%7Eananth/
 
 All 20 numbered files are part of the work with Prof. Sudarshan Ananth and are now listed on that research page, along with their study/reference roles. The earlier separate reading guides and course summaries are saved as drafts. Notes is reserved for personal notes. No thesis, paper, or textbook is presented as Kautik's publication or redistributed as a download.
 
