@@ -133,7 +133,7 @@ img {
   position:fixed;
   inset:0 auto 0 0;
   width:254px;
-  padding:52px 33px 30px;
+  padding:clamp(24px,4vh,52px) 33px clamp(20px,3vh,30px);
   background:var(--side);
   border-right:1px solid var(--line);
   display:flex;
@@ -160,7 +160,7 @@ img {
 .desktop-nav {
   display:grid;
   gap:.3rem;
-  margin-top:2.6rem
+  margin-top:clamp(1.3rem,4vh,2.6rem)
 }
 .desktop-nav a {
   padding:.4rem .7rem;
@@ -425,8 +425,9 @@ main {
   font-size:.95rem
 }
 .prose a[href^=https]:after {
-  content:' ↗';
-  font-size:.75em
+  content:'\2060\00a0↗';
+  font-size:.75em;
+  white-space:nowrap
 }
 .prose blockquote {
   border-left:2px solid var(--line);
@@ -592,8 +593,24 @@ footer a {
     padding-left:105px
   }
 }
-/* Short windows use the page's scroll rather than a separate sidebar scroll. */
-@media(min-width:851px) and (max-height:650px) {
+/* Short windows show projects beside the sidebar, leaving the main menu spacious. */
+@media(min-width:851px) and (max-height:620px) {
+  .desktop-nav .nav-group {
+    position:relative
+  }
+  .desktop-nav .nav-submenu {
+    position:absolute;
+    left:calc(100% + 34px);
+    top:0;
+    width:240px;
+    padding:.7rem;
+    background:var(--side);
+    border:1px solid var(--line);
+    box-shadow:0 6px 20px #0002
+  }
+}
+/* Very short windows use the page's scroll rather than a separate sidebar scroll. */
+@media(min-width:851px) and (max-height:430px) {
   .sidebar {
     position:absolute;
     bottom:auto;

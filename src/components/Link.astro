@@ -4,4 +4,4 @@ interface Props { href: string; class?: string; }
 const { href, class: className } = Astro.props;
 const external = /^https?:\/\//.test(href) && new URL(href).origin !== Astro.site?.origin;
 ---
-<a href={url(href)} class={className} data-external={external || undefined} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}><slot />{external && <><span class="external-mark" aria-hidden="true">↗</span><span class="sr-only"> (external link, opens in a new tab)</span></>}</a>
+<a href={url(href)} class={className} data-external={external || undefined} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}><slot />{external && <><span class="external-mark" aria-hidden="true">&#8288;↗</span><span class="sr-only"> (external link, opens in a new tab)</span></>}</a>
