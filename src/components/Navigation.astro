@@ -1,0 +1,19 @@
+---
+import navigation from '../data/navigation.json';
+import { url } from '../lib/urls';
+const active = (href: string) => href === '/' ? Astro.url.pathname === url('/') : Astro.url.pathname.startsWith(url(href));
+---
+{navigation.map(item => item.children ? (
+  <details class="nav-group" open={active(item.href)}>
+    <summary>
+      <a href={url(item.href)} aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>
+      <span class="nav-toggle">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><path d="M2 1 L8 5 L2 9 Z" /></svg>
+        <span class="sr-only">Show research projects</span>
+      </span>
+    </summary>
+    <div class="nav-submenu">
+      {item.children.map(child => <a href={url(child.href)} aria-current={active(child.href) ? 'page' : undefined}>{child.label}</a>)}
+    </div>
+  </details>
+) : <a href={url(item.href)} aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>)}

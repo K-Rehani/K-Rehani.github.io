@@ -11,5 +11,5 @@ const p = project.data;
 <Base title={p.title} description={p.summary} math>
   <Link class="back-link" href="/research/">← Research</Link>
   <header class="page-header"><h1>{p.title}</h1><p class="detail-meta">{p.dates} · {p.institution}<br />{p.supervisor && (p.supervisorUrl ? <Link href={p.supervisorUrl}>{p.supervisor}</Link> : p.supervisor)}</p><ResourceLinks resources={p.resources} /></header>
-  <div class="prose"><Content /></div><ul class="interests detail-topics">{p.topics.map(t => <li>{t}</li>)}</ul>
+  <div class:list={['prose', { 'light-cone-project': project.id === 'light-cone-field-theory' }]}><Content /></div><ul class="interests detail-topics">{p.topics.map(t => <li>{t}</li>)}</ul>
 </Base>

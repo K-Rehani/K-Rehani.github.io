@@ -178,6 +178,44 @@ img {
 .desktop-nav a:hover {
   color:var(--heading)
 }
+.nav-group > summary {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  list-style:none;
+  cursor:pointer;
+  color:var(--muted)
+}
+.nav-group > summary::-webkit-details-marker {
+  display:none
+}
+.nav-group > summary > a {
+  flex:1
+}
+.nav-toggle {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  min-height:32px;
+  color:var(--accent)
+}
+.nav-toggle svg {
+  transition:transform .18s ease
+}
+.nav-group[open] > summary .nav-toggle svg {
+  transform:rotate(90deg)
+}
+.nav-submenu {
+  display:grid;
+  gap:.1rem;
+  padding:.15rem 0 .4rem .8rem
+}
+.desktop-nav .nav-submenu a {
+  font-size:.77rem;
+  padding:.3rem .5rem;
+  margin-left:0
+}
 .theme-control {
   position:fixed;
   top:24px;
@@ -422,6 +460,9 @@ main {
   overflow:auto;
   font-size:.82rem
 }
+.prose.light-cone-project table {
+  font-size:calc(.82rem + 1px)
+}
 .prose td,.prose th {
   text-align:left;
   border-bottom:1px solid var(--line);
@@ -552,7 +593,7 @@ footer a {
   }
 }
 /* Short windows use the page's scroll rather than a separate sidebar scroll. */
-@media(min-width:851px) and (max-height:520px) {
+@media(min-width:851px) and (max-height:650px) {
   .sidebar {
     position:absolute;
     bottom:auto;
@@ -623,6 +664,13 @@ footer a {
   .mobile-header nav a[aria-current=page] {
     background:var(--hover);
     color:var(--heading)
+  }
+  .mobile-header .nav-group > summary {
+    gap:0
+  }
+  .mobile-header .nav-submenu a {
+    font-size:.8rem;
+    padding:.35rem .4rem
   }
   .page {
     margin:0;

@@ -1,13 +1,12 @@
 ---
 import profile from '../data/profile.json';
-import navigation from '../data/navigation.json';
+import Navigation from '../components/Navigation.astro';
 import Link from '../components/Link.astro';
 import { url } from '../lib/urls';
 import '../styles/global.css';
 interface Props { title?: string; description?: string; math?: boolean; noindex?: boolean; showFooter?: boolean }
 const { title, description = profile.description, math = false, noindex = false, showFooter = true } = Astro.props;
 const pageTitle = title ? `${title} · ${profile.name}` : `${profile.name} · Physics`;
-const active = (href: string) => href === '/' ? Astro.url.pathname === url('/') : Astro.url.pathname.startsWith(url(href));
 const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
@@ -38,9 +37,9 @@ const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro
     <aside class="sidebar" aria-label="Site sidebar">
       <a class="identity" href={url('/')}><span>{profile.name}</span></a>
       <p class="sidebar-bio">{profile.role}<br />{profile.major}<br />{profile.minor}<br /><Link href={profile.institutionUrl}>{profile.institution}</Link></p>
-      <nav class="desktop-nav" aria-label="Main navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}</nav>
+      <nav class="desktop-nav" aria-label="Main navigation"><Navigation /></nav>
     </aside>
-    <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation">{navigation.map(n => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}</nav></details></header>
+    <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><Navigation /></nav></details></header>
     <div class="page"><main id="main" tabindex="-1"><slot /></main>{showFooter && <><slot name="footer-note" /><footer><span>{profile.name} · {profile.location}</span><Link href="/contact/">Get in touch</Link></footer></>}</div>
     <script>import { initUI } from '../scripts/ui.js'; initUI();</script>
   </body>
