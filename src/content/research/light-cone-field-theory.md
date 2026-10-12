@@ -11,7 +11,7 @@ summary: "Study of gauge theory, gravity, and 𝒩=8 supergravity in light-cone 
 ---
 
 
-My work with Prof. Sudarshan Ananth focuses on the light-cone formulation of gauge theory, gravity, and $\mathcal{N}=8$ supergravity. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity.
+My work with Prof. Sudarshan Ananth focuses on the light-cone formulation of gauge theory, gravity, and $\mathcal{N}=8$ supergravity. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity. I also work closely with [Dr. Nipun Bhave](https://inspirehep.net/authors/2120640?ui-citation-summary=true) (currently Post Doc at LUH, Germany) on various calculations and discussions.
 
 ## What I have been studying
 
