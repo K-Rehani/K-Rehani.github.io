@@ -47,6 +47,14 @@ Website address: https://k-rehani.github.io/
 
 The source files live in this repository. The deployment workflow builds the website whenever changes are pushed to `main`. Pull requests build and check the site without deploying.
 
+### Website updates
+
+Each build has a shared version based on its commit. Pages check for the latest version when opened or restored with browser Back. Internal page links use that version to avoid loading an older cached page; the address bar and canonical links stay clean. Reloading one page also shares the latest version with other open tabs.
+
+After this feature is first published, reload a page once to load it. After later deployments finish, refreshing any section is enough; there is no need to refresh every page separately. PDFs and external links keep their existing behavior.
+
+The update logic is in `src/scripts/site-updates.js`, with the shared manifest at `/site-version.json`. If the connection is unavailable, normal navigation still works.
+
 ### Enable Pages once
 
 1. In this repository open **Settings → Pages**.
