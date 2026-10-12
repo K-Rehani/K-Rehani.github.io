@@ -4,7 +4,7 @@ title: "Quantum fields and light-cone interactions"
 subject: "Relativity & field theory"
 order: 2
 kind: "Reading list"
-summary: "The Lorentz group, introductory path integrals, arbitrary-spin cubic interactions, and current reading in supersymmetric Yang–Mills theory."
+summary: "The Lorentz group, introductory path integrals, arbitrary-spin cubic interactions, and current reading in SUSY Yang–Mills theory."
 ---
 
 
@@ -16,6 +16,6 @@ summary: "The Lorentz group, introductory path integrals, arbitrary-spin cubic i
 
 ## Current reading
 
-Brink, Lindgren and Nilsson’s *N=4 Yang–Mills Theory on the Light Cone* develops a superspace description of maximally supersymmetric Yang–Mills theory. I am working through this as part of my current theoretical study.
+Brink, Lindgren and Nilsson’s *N=4 Yang–Mills Theory on the Light Cone* develops a superspace description of Yang–Mills theory with maximal SUSY. I am working through this as part of my current theoretical study.
 
 Sarthak Parikh’s thesis, *Applications of Light-cone Superspace in Quantum Field Theory*, is an additional reference.

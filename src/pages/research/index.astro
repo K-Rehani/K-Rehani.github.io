@@ -7,7 +7,7 @@ const projects = (await getCollection('research', ({data}) => !data.draft)).sort
 ---
 <Base title="Research" description="Research interests and projects in light-cone field theory, gravity, and astronomical spectroscopy.">
   <header class="page-header"><h1>Research</h1></header>
-  <section><h2>Current interests</h2><p>I am particularly interested in how symmetries and physical degrees of freedom help us understand gauge theories and gravity. My current work uses the light-cone formulation, with connections to supersymmetry and scattering amplitudes.</p><ul class="interests">{profile.interests.map(t => <li>{t}</li>)}</ul></section>
+  <section><h2>Current interests</h2><p>I am particularly interested in how symmetries and physical degrees of freedom help us understand gauge theories and gravity. My current work uses the light-cone formulation, with connections to SUSY and scattering amplitudes.</p><ul class="interests">{profile.interests.map(t => <li>{t}</li>)}</ul></section>
   <div class="section-heading"><h2>Projects & experience</h2></div>
   {projects.map(p => <ProjectEntry project={p} />)}
 </Base>
