@@ -37,10 +37,10 @@ I am also studying $\mathcal{N}=4$ Yang–Mills theory and $\mathcal{N}=8$ super
 | No. | Material | Progress / use |
 | --- | --- | --- |
 | 0 | [Prerequisite readings](/readings-and-notes/#readings) | Background reading |
-| 1 | Sarthak Parikh, *Applications of Light-cone Superspace in Quantum Field Theory* (thesis) | Reference (link unavailable) |
-| 2 | Mahendraprasad Mali, *Aspects of Gravitation in the Light-cone Gauge* (thesis, 2016) | Reference |
-| 3 | Sucheta Majumdar, *Symmetries in Gravity and Supergravity in the Light-cone Gauge* (thesis, 2018) | Reference |
-| 4 | Bengtsson, Bengtsson and Brink, *Cubic Interaction Terms for Arbitrary Spin* | Studied |
+| 1 | Sarthak Parikh, [*Applications of Light-cone Superspace in Quantum Field Theory*](https://dr.iiserpune.ac.in/items/f34a9cfd-2631-49cd-985f-aabdf5c914ec) (thesis) | Reference |
+| 2 | Mahendraprasad Mali, [*Aspects of Gravitation in the Light-cone Gauge*](https://dr.iiserpune.ac.in/items/0e825930-a4c8-47aa-acc3-e82249d444c5) (thesis, 2016) | Reference |
+| 3 | Sucheta Majumdar, [*Symmetries in Gravity and Supergravity in the Light-cone Gauge*](https://dr.iiserpune.ac.in/items/00990626-613f-4fa7-877f-17056520e678) (thesis, 2018) | Reference |
+| 4 | Bengtsson, Bengtsson and Brink, [*Cubic Interaction Terms for Arbitrary Spin*](https://www.sciencedirect.com/science/article/pii/0550321383901402) | Studied |
 | 5 | Scherk and Schwarz, [*Gravitation in the Light Cone Gauge*](https://link.springer.com/article/10.1007/BF00761962) | Studied in part |
 | 6 | Goroff and Schwarz, [*D-Dimensional Gravity in the Light-cone Gauge*](https://www.sciencedirect.com/science/article/pii/0370269383916301) | Reference |
 | 7 | Bengtsson, Cederwall and Lindgren, [*Light Front Actions for Gravity and Higher Spins; Some Further Results*](https://research.chalmers.se/publication/65334) | Studied |
