@@ -459,17 +459,17 @@ main {
   overflow:auto hidden;
   padding:.6rem 0
 }
-.prose table {
+.prose table,.reading-table {
   width:100%;
   border-collapse:collapse;
   display:block;
   overflow:auto;
   font-size:.82rem
 }
-.prose.light-cone-project table {
+.prose.light-cone-project table,.reading-table {
   font-size:calc(.82rem + 1px)
 }
-.prose td,.prose th {
+.prose td,.prose th,.reading-table td,.reading-table th {
   text-align:left;
   border-bottom:1px solid var(--line);
   padding:.7rem
