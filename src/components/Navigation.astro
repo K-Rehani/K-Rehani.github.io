@@ -1,19 +1,20 @@
 ---
 import navigation from '../data/navigation.json';
 import { url } from '../lib/urls';
+interface Props { idPrefix: string; }
+const { idPrefix } = Astro.props;
 const active = (href: string) => href === '/' ? Astro.url.pathname === url('/') : Astro.url.pathname.startsWith(url(href));
 ---
 {navigation.map(item => item.children ? (
-  <details class="nav-group" open={active(item.href)}>
-    <summary>
+  <div class="nav-group">
+    <div class="nav-research-row">
       <a href={url(item.href)} aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>
-      <span class="nav-toggle">
+      <button class="nav-toggle" type="button" aria-label="Show research projects" aria-expanded="false" aria-controls={`${idPrefix}-research-projects`}>
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><path d="M2 1 L8 5 L2 9 Z" /></svg>
-        <span class="sr-only">Show research projects</span>
-      </span>
-    </summary>
-    <div class="nav-submenu">
+      </button>
+    </div>
+    <div class="nav-submenu" id={`${idPrefix}-research-projects`} hidden>
       {item.children.map(child => <a href={url(child.href)} aria-current={active(child.href) ? 'page' : undefined}>{child.label}</a>)}
     </div>
-  </details>
+  </div>
 ) : <a href={url(item.href)} aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>)}

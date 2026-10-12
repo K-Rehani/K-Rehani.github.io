@@ -37,9 +37,33 @@ export function initUI(doc = document, win = window) {
       copyEmail.disabled = false;
     }
   });
+  const projectMenus = [...(doc.querySelectorAll?.('.nav-toggle') || [])]
+    .map(button => ({ button, panel: doc.getElementById(button.getAttribute('aria-controls')) }))
+    .filter(({ panel }) => panel);
+  const closeProjectMenus = () => {
+    projectMenus.forEach(({ button, panel }) => {
+      panel.hidden = true;
+      button.setAttribute('aria-expanded', 'false');
+    });
+  };
+  projectMenus.forEach(({ button, panel }) => {
+    button.addEventListener('click', () => {
+      const shouldOpen = panel.hidden;
+      closeProjectMenus();
+      panel.hidden = !shouldOpen;
+      button.setAttribute('aria-expanded', String(shouldOpen));
+    });
+  });
+  doc.addEventListener('click', event => {
+    if (!projectMenus.some(({ button }) => button.contains(event.target))) closeProjectMenus();
+  });
   const menu = doc.getElementById('mobile-menu');
   doc.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && menu?.open) {
+    const openProjectMenu = projectMenus.find(({ panel }) => !panel.hidden);
+    if (event.key === 'Escape' && openProjectMenu) {
+      closeProjectMenus();
+      openProjectMenu.button.focus();
+    } else if (event.key === 'Escape' && menu?.open) {
       menu.open = false;
       menu.querySelector('summary')?.focus();
     }

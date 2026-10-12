@@ -37,9 +37,9 @@ const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro
     <aside class="sidebar" aria-label="Site sidebar">
       <a class="identity" href={url('/')}><span>{profile.name}</span></a>
       <p class="sidebar-bio">{profile.role}<br />{profile.major}<br />{profile.minor}<br /><Link href={profile.institutionUrl}>{profile.institution}</Link></p>
-      <nav class="desktop-nav" aria-label="Main navigation"><Navigation /></nav>
+      <nav class="desktop-nav" aria-label="Main navigation"><Navigation idPrefix="desktop" /></nav>
     </aside>
-    <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><Navigation /></nav></details></header>
+    <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><Navigation idPrefix="mobile" /></nav></details></header>
     <div class="page"><main id="main" tabindex="-1"><slot /></main>{showFooter && <><slot name="footer-note" /><footer><span>{profile.name} · {profile.location}</span><Link href="/contact/">Get in touch</Link></footer></>}</div>
     <script>import { initUI } from '../scripts/ui.js'; initUI();</script>
   </body>

@@ -67,3 +67,49 @@ test('copy email failure leaves the button usable without a false success messag
     assert.equal(f.timers.length, 0);
   }
 });
+
+function projectMenuFixture() {
+  const documentListeners = {}, panels = [{ hidden: true }, { hidden: true }];
+  const buttons = panels.map((panel, i) => ({
+    attrs: { 'aria-controls': 'projects-' + i, 'aria-expanded': 'false' }, listeners: {}, focused: false,
+    getAttribute(key) { return this.attrs[key]; },
+    setAttribute(key, value) { this.attrs[key] = value; },
+    addEventListener(key, listener) { this.listeners[key] = listener; },
+    contains(target) { return target === this || target === this.icon; },
+    focus() { this.focused = true; },
+    icon: {},
+  }));
+  const doc = {
+    documentElement: { dataset: { theme: 'dark' } },
+    querySelectorAll() { return buttons; },
+    getElementById(id) { return panels[Number(id?.replace('projects-', ''))]; },
+    addEventListener(key, listener) { documentListeners[key] = listener; },
+  };
+  initUI(doc, {});
+  return { buttons, panels, documentListeners };
+}
+test('project menu opens only from its arrow and closes on other clicks or selection', () => {
+  const f = projectMenuFixture();
+  f.documentListeners.click({ target: {} });
+  assert.ok(f.panels.every(panel => panel.hidden));
+  f.buttons[0].listeners.click();
+  f.documentListeners.click({ target: f.buttons[0].icon });
+  assert.equal(f.panels[0].hidden, false);
+  assert.equal(f.buttons[0].attrs['aria-expanded'], 'true');
+  f.documentListeners.click({ target: { role: 'project link' } });
+  assert.equal(f.panels[0].hidden, true);
+  assert.equal(f.buttons[0].attrs['aria-expanded'], 'false');
+  f.buttons[0].listeners.click();
+  f.buttons[1].listeners.click();
+  assert.equal(f.panels[0].hidden, true);
+  assert.equal(f.panels[1].hidden, false);
+  f.buttons[1].listeners.click();
+  assert.equal(f.panels[1].hidden, true);
+});
+test('Escape closes the project menu and returns focus to its arrow', () => {
+  const f = projectMenuFixture();
+  f.buttons[0].listeners.click();
+  f.documentListeners.keydown({ key: 'Escape' });
+  assert.equal(f.panels[0].hidden, true);
+  assert.equal(f.buttons[0].focused, true);
+});
