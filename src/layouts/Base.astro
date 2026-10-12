@@ -3,6 +3,7 @@ import profile from '../data/profile.json';
 import Navigation from '../components/Navigation.astro';
 import Link from '../components/Link.astro';
 import { url } from '../lib/urls';
+import { siteVersion } from '../lib/site-version';
 import '../styles/global.css';
 interface Props { title?: string; description?: string; math?: boolean; noindex?: boolean; showFooter?: boolean }
 const { title, description = profile.description, math = false, noindex = false, showFooter = true } = Astro.props;
@@ -10,7 +11,7 @@ const pageTitle = title ? `${title} · ${profile.name}` : `${profile.name} · Ph
 const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-site-version={siteVersion} data-version-url={url('/site-version.json')}>
   <head>
     <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title><meta name="description" content={description} />
@@ -41,6 +42,11 @@ const canonical = new URL(noindex ? url('/404.html') : Astro.url.pathname, Astro
     </aside>
     <header class="mobile-header"><a class="mobile-name" href={url('/')}>{profile.name}</a><details id="mobile-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><Navigation idPrefix="mobile" /></nav></details></header>
     <div class="page"><main id="main" tabindex="-1"><slot /></main>{showFooter && <><slot name="footer-note" /><footer><span>{profile.name} · {profile.location}</span><Link href="/contact/">Get in touch</Link></footer></>}</div>
-    <script>import { initUI } from '../scripts/ui.js'; initUI();</script>
+    <script>
+      import { initUI } from '../scripts/ui.js';
+      import { initSiteUpdates } from '../scripts/site-updates.js';
+      initUI();
+      void initSiteUpdates();
+    </script>
   </body>
 </html>

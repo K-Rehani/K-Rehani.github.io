@@ -6,7 +6,7 @@
     "dev": "node scripts/copy-math.mjs && astro dev",
     "build": "node scripts/copy-math.mjs && astro build",
     "preview": "astro preview",
-    "verify": "npm run build && node scripts/check-site.mjs && node --test scripts/ui.test.mjs"
+    "verify": "npm run build && node scripts/check-site.mjs && node --test scripts/ui.test.mjs scripts/site-updates.test.mjs"
   },
   "type": "module",
   "dependencies": {
