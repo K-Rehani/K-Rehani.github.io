@@ -11,15 +11,15 @@ summary: "Study of gauge theory, gravity, and 𝒩=8 supergravity in light-cone 
 ---
 
 
-My theoretical work with Prof. Sudarshan Ananth has focused on the light-cone formulation of gauge theory, gravity, and $\mathcal{N}=8$ supergravity. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity.
+My work with Prof. Sudarshan Ananth focuses on the light-cone formulation of gauge theory, gravity, and $\mathcal{N}=8$ supergravity. I am interested in how working directly with physical field degrees of freedom helps us understand interactions in gauge theory and gravity.
 
 ## What I have been studying
 
-I began with special relativity, index notation, the Lagrangian formulation of electromagnetism, and the Lorentz group. I then studied how the light-cone approach can be used to construct cubic interactions for fields of arbitrary spin.
+I began with special relativity, index notation, the Lagrangian formulation of electromagnetism, the Lorentz group, and introductory path integrals. I then studied how the light-cone approach can be used to construct cubic interactions for fields of arbitrary spin.
 
-My gravity reading has focused on the gauge conditions and constraint equations that reduce the Einstein–Hilbert action to its physical degrees of freedom, followed by its expansion in graviton fields. I have been working through the cubic and quartic terms, using the original light-front treatment and later expressions for comparison.
+For gravity, I studied the gauge conditions and constraint equations used to reduce the Einstein–Hilbert action to the two physical graviton helicities in four dimensions. I am working through its cubic and quartic terms, comparing the original light-front treatment with later expressions.
 
-My study also includes $\mathcal{N}=8$ supergravity, with an interest in its symmetries and how its interaction terms relate to those of pure gravity.
+I am also studying $\mathcal{N}=4$ Yang–Mills theory and $\mathcal{N}=8$ supergravity in light-cone gauge. For supergravity, I am interested in its symmetries and how its interaction terms relate to pure gravity.
 
 ## Currently working on
 
@@ -29,8 +29,6 @@ I am currently working on color–kinematics (CK) duality with Prof. Sudarshan A
 - Reference 17: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476).
 
 ## Reading and references
-
-The following material is part of my work with Prof. Sudarshan Ananth, beginning in August 2025. Items 16–17 are my current CK-duality references. Some items are calculations I have worked through; others are references for the next stages.
 
 | No. | Material | Progress / use |
 | --- | --- | --- |
@@ -51,13 +49,3 @@ The following material is part of my work with Prof. Sudarshan Ananth, beginning
 | 15 | Ananth, Brink, Majumdar, Mali and Shah, [*Gravitation and Quadratic Forms*](https://arxiv.org/abs/1702.06261) | Related reading |
 | 16 | Bern, Carrasco and Johansson, [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) | Current CK-duality reference |
 | 17 | Bern, Carrasco and Johansson, [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) | Current CK-duality reference |
-
-## How the topics fit together
-
-The first stage covered special relativity, tensor and index notation, the electromagnetic field Lagrangian, and the Lorentz group. Introductory path integrals and cubic interactions then led into the light-cone treatment of gauge theory and gravity.
-
-For gravity, I studied the gauge conditions and constraint equations that leave the two physical graviton helicities in four dimensions, then worked through the cubic and quartic interaction terms. The higher-order gravity papers and theses provide further references for these calculations.
-
-My reading also includes the light-cone formulation of $\mathcal{N}=4$ Yang–Mills theory. My study of $\mathcal{N}=8$ supergravity, together with the KLT and quadratic-form papers, helps me understand the connections between gauge theory and gravity.
-
-Further semester projects and my own write-ups will be added here as the work develops.

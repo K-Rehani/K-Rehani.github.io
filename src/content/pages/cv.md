@@ -5,9 +5,9 @@ Bachelors of Science (Physics Major & Mathematics Minor)
 
 ## Research experience
 
-- **August 2025–present · IISER Pune** — Field theory and gravity in light-cone gauge, with [Prof. Sudarshan Ananth](https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4).
-- **May–July 2025 · NCRA–TIFR, Pune** — Repeat optical spectra and changing-look AGN, with [Prof. Ishwara Chandra](https://www.ncra.tifr.res.in/people/253).
-- **May–July 2024 · TIFR, Mumbai** — Stacking galaxy and quasar spectra, with [Prof. Shadab Alam](https://www.tifr.res.in/~shadab.alam/).
+- **August 2025–present · IISER Pune**: Field theory and gravity in light-cone gauge, with [Prof. Sudarshan Ananth](https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4).
+- **May–July 2025 · NCRA–TIFR, Pune**: Repeat optical spectra and changing-look AGN, with [Prof. Ishwara Chandra](https://www.ncra.tifr.res.in/people/253).
+- **May–July 2024 · TIFR, Mumbai**: Stacking galaxy and quasar spectra, with [Prof. Shadab Alam](https://www.tifr.res.in/~shadab.alam/).
 
 ## Technical experience
 

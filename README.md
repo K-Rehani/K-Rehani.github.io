@@ -1,11 +1,11 @@
-# Kautik Rehani — academic website
+# Kautik Rehani: academic website
 
 A small, static academic website built with Astro, Markdown, CSS, and a little JavaScript. The starting design is dark; visitors can switch to light mode. There is no database, account system, contact form, or paid service.
 
 ## Start here
 
 1. Install **Node.js 24** (which includes npm).
-2. Open a terminal in this folder — the one containing `package.json`.
+2. Open a terminal in the folder containing `package.json`.
 3. Run:
 
 ```bash
@@ -30,10 +30,10 @@ npm run preview
 | --- | --- |
 | Name, email, GitHub, LinkedIn, photo, CV link | `src/data/profile.json` |
 | Short biography | `src/content/pages/home.md` |
-| CV PDF and page preview | `public/cv/` — former native content is retained in `src/content/pages/cv.md` |
-| Research projects | `src/content/research/` — one Markdown file per project |
-| Personal notes | `src/content/notes/` — one Markdown file per entry |
-| Future coursework | `src/content/courses/` — one Markdown file per course |
+| CV PDF and page preview | `public/cv/`, former native content is retained in `src/content/pages/cv.md` |
+| Research projects | `src/content/research/`, one Markdown file per project |
+| Personal notes | `src/content/notes/`, one Markdown file per entry |
+| Future coursework | `src/content/courses/`, one Markdown file per course |
 | Sidebar links | `src/data/navigation.json` |
 | Colours, typefaces, spacing | `src/styles/global.css` |
 
@@ -79,9 +79,9 @@ For a custom domain, set `SITE_URL` to the complete origin and `SITE_BASE` to `/
 
 ## What is included
 
-- Home, Research, Readings & Notes, CV, Contact, and a useful 404 page.
+- Home, Research, Readings & Notes, CV, Contact, and a 404 page.
 - Three research entries: ongoing IISER study, NCRA 2025, and TIFR 2024.
-- All 20 supplied reading items and references collected under the IISER project with Prof. Sudarshan Ananth.
+- Introductory readings in Readings & Notes, with project references under the IISER entry with Prof. Sudarshan Ananth.
 - Content collections: new Markdown entries appear automatically.
 - Optional external PDF links, repository links, and local files.
 - Mathematics rendered at build time with KaTeX, with local CSS/fonts; syntax-highlighted code blocks.
@@ -99,11 +99,11 @@ Reports link to their existing GitHub files. Third-party PDFs, book extracts, su
 - Education dates, if you want them shown alongside the degree title.
 - A confirmed list of formal and audited courses, including which are ongoing.
 - Named extracurricular activities and roles you want included.
-- Your own notes PDFs and their exact public URLs. The notes repository currently has a README but no notes PDFs.
+- Further notes PDFs and their public URLs.
 - Individual titles/dates and write-ups for further semester projects, if you want them separated from the ongoing light-cone study.
 
-Your official email and LinkedIn profile are included. The supplied CV PDF is hosted unchanged, with a linked page preview. The optional photo setting remains empty.
+Your official email and LinkedIn profile are included. The CV PDF and page preview are hosted on the website. The optional photo setting remains empty.
 
 See `CONTENT_SOURCES.md` for the basis of the project descriptions and `VERIFICATION.md` for checks and remaining manual review.
 
-The Readings & Notes section uses `/readings-and-notes/`; old `/notes/` links redirect there. The CV page provides a responsive preview and open/download links to the supplied, unmodified PDF. Its former native content is retained in `src/content/pages/cv.md` for an easy return.
+The Readings & Notes section uses `/readings-and-notes/`; old `/notes/` links redirect there. The CV page provides a responsive preview and open/download links to the CV PDF. Its former native content is retained in `src/content/pages/cv.md` for an easy return.

@@ -25,5 +25,3 @@ $$
 $$
 
 A reference may use a different convention; signs and raised or lowered indices should be checked before combining formulas from different sources.
-
-My own notes and worked calculations will be linked here as I organize them. The textbook extracts used for study are not reproduced on this website.

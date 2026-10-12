@@ -12,14 +12,14 @@ resources: [{"label": "Project report", "kind": "pdf", "url": "https://github.co
 ---
 
 
-I spent summer 2024 at TIFR Mumbai working with Prof. Shadab Alam on stacking optical spectra of galaxies and quasars. The motivation was to combine spectra to make shared spectral features easier to study when individual observations are noisy. Alongside this, I studied recoil velocities from black-hole mergers and worked with simulations.
+I spent summer 2024 at TIFR Mumbai working with Prof. Shadab Alam on stacking optical spectra of galaxies and quasars. The aim was to make shared spectral features easier to see in noisy data. Alongside this, I studied recoil velocities from black-hole mergers and worked with simulations.
 
 ## My work
 
-I developed a Python notebook to retrieve spectra through SPARCL, account for redshift, organize them over a common wavelength range, and compare unweighted and inverse-variance-weighted stacks. The project involved wavelength binning, outlier handling through sigma clipping, and plotting the resulting spectra.
+I developed a Python notebook to retrieve spectra through SPARCL, account for redshift, organize them over a common wavelength range, and compare unweighted and inverse-variance-weighted stacks. I binned wavelengths, used sigma clipping to handle outliers, and plotted the stacks.
 
-The report discusses SDSS DR16, BOSS DR16, and DESI EDR. The saved notebook example uses a sample of 100 SDSS DR16 quasars. The project helped me understand both the usefulness of stacking and the care needed when combining measurements with different uncertainties and coverage.
+The report discusses SDSS DR16, BOSS DR16, and DESI EDR. The saved notebook example uses a sample of 100 SDSS DR16 quasars. I learned how differences in uncertainty and wavelength coverage affect a stack.
 
 ## Outcome
 
-The main outputs are the spectral-stacking notebook, saved comparison plots, and my summer project report. The repository also includes notes about the implemented methods and how to rerun the notebook.
+I wrote a summer report and produced the notebook and comparison plots. The repository includes notes on the method and instructions for rerunning the notebook.

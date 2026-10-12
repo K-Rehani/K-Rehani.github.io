@@ -26,6 +26,6 @@ This work gave me practice with FITS catalogs, observation identifiers, redshift
 
 ## Outcome and code
 
-The summer work produced a repeat-spectrum selection and comparison workflow, diagnostic plots, and a project report. The linked repository includes a Python implementation with measurements of selected emission lines, simple fits to broad hydrogen lines, and comparison plots. It also includes synthetic examples for checking the measurements.
+The summer work produced code to select and compare repeat spectra, plots, and a project report. The repository contains Python code to measure selected emission lines, fit broad hydrogen lines, and plot the comparisons. It also includes test spectra for checking the measurements.
 
-The project provides a starting point for reviewing possible changing-look objects; it does not report a confirmed changing-look discovery. Most of the work was done in summer 2025. I uploaded it to GitHub later and have made small updates to the code and documentation since then.
+The code helps compare spectra and review possible changing-look candidates. Most of the work was done in summer 2025. I uploaded it to GitHub later and have made small updates to the code and documentation since then.
