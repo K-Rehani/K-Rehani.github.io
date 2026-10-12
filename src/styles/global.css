@@ -497,6 +497,15 @@ footer {
   font-size:.67rem;
   color:var(--muted)
 }
+.site-credit {
+  max-width:770px;
+  margin:3.6rem 0 .7rem;
+  font-size:.67rem;
+  color:var(--muted)
+}
+.site-credit + footer {
+  margin-top:0
+}
 footer a {
   color:var(--muted);
   text-decoration:none
