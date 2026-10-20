@@ -536,6 +536,9 @@ main {
     float:left;
     margin:0 2rem 1.25rem 0
   }
+  .home-introduction .intro p {
+    display:flow-root
+  }
 }
 .muted {
   color:var(--muted)
