@@ -5,9 +5,9 @@ import { Content as Bio } from '../content/pages/home.md';
 import { url } from '../lib/urls';
 ---
 <Base math>
-  <h1 class="sr-only">{profile.name}</h1>
   <section class="home-introduction" aria-label="Introduction">
-    {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="240" height="300" />}
+    {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="1590" height="1958" fetchpriority="high" decoding="async" />}
+    <h1 class="sr-only">{profile.name}</h1>
     <div class="intro prose"><Bio /></div>
   </section>
   <p slot="footer-note" class="site-credit">The views and opinions on this website are my own and do not reflect those of any institution.</p>
