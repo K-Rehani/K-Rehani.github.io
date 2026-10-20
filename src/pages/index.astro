@@ -7,7 +7,10 @@ import { url } from '../lib/urls';
 <Base math>
   <section class="home-introduction" aria-label="Introduction">
     {profile.photo && <div class="portrait"><img class="portrait-image" src={url(profile.photo)} alt={profile.photoAlt} width="1590" height="1958" fetchpriority="high" decoding="async" /></div>}
-    <h1 class="sr-only">{profile.name}</h1>
+    <header class="home-heading">
+      <h1>{profile.name}</h1>
+      <p class="home-pronouns">(He/Him)</p>
+    </header>
     <div class="intro prose"><Bio /></div>
   </section>
   <p slot="footer-note" class="site-credit">The views and opinions on this website are my own and do not reflect those of any institution.</p>
