@@ -6,7 +6,7 @@ import { url } from '../lib/urls';
 ---
 <Base math>
   <section class="home-introduction" aria-label="Introduction">
-    {profile.photo && <img class="portrait" src={url(profile.photo)} alt={profile.photoAlt} width="1590" height="1958" fetchpriority="high" decoding="async" />}
+    {profile.photo && <div class="portrait"><img class="portrait-image" src={url(profile.photo)} alt={profile.photoAlt} width="1590" height="1958" fetchpriority="high" decoding="async" /></div>}
     <h1 class="sr-only">{profile.name}</h1>
     <div class="intro prose"><Bio /></div>
   </section>

@@ -525,11 +525,23 @@ main {
   margin:0 0 1.5rem
 }
 .portrait {
+  position:relative;
   display:block;
   width:50%;
-  height:auto;
+  aspect-ratio:1272 / 1664.3;
+  overflow:hidden;
   margin:0 0 2rem;
   border-radius:16px
+}
+/* Crop only the display: retain 80% of the original width and 85% of its height. */
+.portrait-image {
+  position:absolute;
+  display:block;
+  width:125%;
+  max-width:none;
+  height:auto;
+  left:-18.75%;
+  top:-17.6470588235%
 }
 @media(min-width:1100px) {
   .home-introduction .portrait {
