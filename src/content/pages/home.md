@@ -1,4 +1,4 @@
-Welcome to my website. I am a 4th year UG student with Physics Major and Mathematics Minor at the [Indian Institute of Science Education and Research (IISER), Pune](https://www.iiserpune.ac.in/). I hope you find what you are looking for on the website. Feel free to get in touch otherwise.
+Welcome to my website. I am a 4th year UG student with Physics Major and Mathematics Minor at the [Indian Institute of Science Education and Research (IISER), Pune](https://www.iiserpune.ac.in/). I hope you find what you are looking for on the website.
 
 For a broader audience, I am interested in theoretical high energy physics, with the goal of unifying gravity with the other forces within the quantum field theory framework. I also keep a keen eye on mathematics that could be useful for my exploration.
 
