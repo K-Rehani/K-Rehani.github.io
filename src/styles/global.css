@@ -540,21 +540,21 @@ main {
 .portrait {
   position:relative;
   display:block;
-  width:40%;
-  aspect-ratio:1272 / 1664.3;
+  width:41.5%;
+  aspect-ratio:1319.7 / 1723.04;
   overflow:hidden;
   margin:0 0 2rem;
   border-radius:16px
 }
-/* Crop only the display: retain 80% of the original width and 85% of its height. */
+/* Crop only the display: retain 83% of the original width and 88% of its height. */
 .portrait-image {
   position:absolute;
   display:block;
-  width:125%;
+  width:120.4819277108%;
   max-width:none;
   height:auto;
-  left:-18.75%;
-  top:-17.6470588235%
+  left:-14.4578313253%;
+  top:-13.6363636364%
 }
 @media(min-width:1100px) {
   .home-introduction .portrait {
@@ -646,7 +646,7 @@ footer a {
 }
 @media(max-width:850px) {
   .portrait {
-    width:60%
+    width:62.25%
   }
   .sidebar {
     position:static;
@@ -792,7 +792,7 @@ footer a {
     overflow-wrap:anywhere
   }
   .portrait {
-    width:60%;
+    width:62.25%;
     margin:0 0 1.75rem
   }
   .intro-links {
