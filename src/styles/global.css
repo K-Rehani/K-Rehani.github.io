@@ -527,7 +527,7 @@ main {
 .portrait {
   position:relative;
   display:block;
-  width:50%;
+  width:40%;
   aspect-ratio:1272 / 1664.3;
   overflow:hidden;
   margin:0 0 2rem;
@@ -633,7 +633,7 @@ footer a {
 }
 @media(max-width:850px) {
   .portrait {
-    width:75%
+    width:60%
   }
   .sidebar {
     position:static;
@@ -779,7 +779,7 @@ footer a {
     overflow-wrap:anywhere
   }
   .portrait {
-    width:75%;
+    width:60%;
     margin:0 0 1.75rem
   }
   .intro-links {
