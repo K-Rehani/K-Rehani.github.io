@@ -23,8 +23,8 @@ For gravity, I studied the gauge conditions and constraint equations used to red
 
 I am currently working on color–kinematics (CK) duality as a reading project. My current references are the following papers (also listed in references):
 
-- Reference 14: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) by BCJ.
-- Reference 15: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) by BCJ.
+- Reference 14: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) by Zvi Bern, John Joseph M. Carrasco and Henrik Johansson.
+- Reference 15: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) by Zvi Bern, John Joseph M. Carrasco and Henrik Johansson.
 
 I am also studying $\mathcal{N}=4$ Yang–Mills theory and $\mathcal{N}=8$ supergravity in light-cone gauge. For supergravity, I am interested in its symmetries and how its interaction terms relate to pure gravity. My current references are the following papers and book (also listed in references):
 
