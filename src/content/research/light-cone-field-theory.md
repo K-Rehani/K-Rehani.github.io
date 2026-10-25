@@ -21,7 +21,7 @@ For gravity, I studied the gauge conditions and constraint equations used to red
 
 ## Currently working on
 
-I am currently working on color–kinematics (CK) duality with Prof. Sudarshan Ananth. My current references are the following papers (also listed in references):
+I am currently working on color–kinematics (CK) duality as a reading project. My current references are the following papers (also listed in references):
 
 - Reference 14: [*New Relations for Gauge-Theory Amplitudes* (2008)](https://arxiv.org/abs/0805.3993) by BCJ.
 - Reference 15: [*Perturbative Quantum Gravity as a Double Copy of Gauge Theory* (2010)](https://arxiv.org/abs/1004.0476) by BCJ.
