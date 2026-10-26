@@ -1,6 +1,6 @@
 Welcome to my website. I am a 4th year UG student with Physics Major and Mathematics Minor at the [Indian Institute of Science Education and Research (IISER), Pune](https://www.iiserpune.ac.in/). I hope you find what you are looking for on the website.
 
-For a broader audience, I am interested in theoretical high energy physics, with the goal of understanding the phenomenon in our Universe at all energy scales. I also keep a keen eye on mathematics that could be useful for my exploration.
+For a broader audience, I am interested in theoretical high energy physics, with the goal of understanding the phenomenon in our Universe at all energy scales. I also love to learn mathematics useful for this exploration.
 
 I am currently working with [Prof. Sudarshan Ananth](https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/sudarshan-ananth/4) on CK-Duality and $\mathcal{N}=8$ Supergravity. For a detailed overview of my interests and work please see the [Research](research/) section.
 
